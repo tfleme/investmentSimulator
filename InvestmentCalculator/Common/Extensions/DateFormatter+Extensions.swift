@@ -2,14 +2,14 @@ import Foundation
 
 extension DateFormatter {
     
-    static var appDateFormatter: DateFormatter {
+    static var app: DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale.init(identifier: "pt-br")
         dateFormatter.dateFormat = "dd/MM/yyyy"
         return dateFormatter
     }
     
-    static var backendDateFormatter: DateFormatter {
+    static var backend: DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale.init(identifier: "pt-br")
         dateFormatter.dateFormat = "yyyy-MM-dd"
