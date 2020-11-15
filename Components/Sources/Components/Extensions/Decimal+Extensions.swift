@@ -14,4 +14,9 @@ extension Decimal {
     public var currencyString: String {
         return NumberFormatter.currency.string(from: self as NSDecimalNumber)!
     }
+    
+    public var percentString: String {
+        let percent = self / 100
+        return NumberFormatter.percentage.string(from: percent as NSDecimalNumber)!
+    }
 }

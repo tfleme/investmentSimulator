@@ -4,8 +4,8 @@ public final class DetailView: UIView {
     
     // MARK: - Private properties
     
-    private let titleLabel = Label(textStyle: .body, textColor: .mediumGray)
-    private let valueLabel = Label(textStyle: .body, textColor: .darkGray)
+    private let titleLabel = Label(textStyle: .body, textColor: .mediumGray, textAlignment: .left)
+    private let valueLabel = Label(textStyle: .body, textColor: .darkGray, textAlignment: .right)
     
     // MARK: - Initializers
     

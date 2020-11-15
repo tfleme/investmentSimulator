@@ -9,4 +9,13 @@ extension NumberFormatter {
         numberFormatter.locale = Locale(identifier: "pt_BR")
         return numberFormatter
     }
+    
+    public static var percentage: NumberFormatter {
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .percent
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.locale = Locale(identifier: "pt_BR")
+        return numberFormatter
+    }
 }
