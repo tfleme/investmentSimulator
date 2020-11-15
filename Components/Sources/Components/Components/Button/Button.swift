@@ -35,7 +35,7 @@ public final class Button: UIButton {
     
     public override var isEnabled: Bool {
         didSet {
-            backgroundColor = isEnabled ? .primaryGreen : .mediumGray
+            backgroundColor = isEnabled ? .primaryGreen : .lightGray
             isUserInteractionEnabled = isEnabled
         }
     }
