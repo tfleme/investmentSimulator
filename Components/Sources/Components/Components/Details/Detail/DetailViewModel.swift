@@ -6,4 +6,12 @@ public struct DetailViewModel {
     
     public let title: String
     public let value: String
+    
+    // MARK: - Initializers
+    
+    public init(title: String, value: String) {
+        
+        self.title = title
+        self.value = value
+    }
 }
