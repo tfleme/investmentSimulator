@@ -1,18 +1,31 @@
 import Foundation
+import RxSwift
 
 // MARK: - Decodable
 
 extension Data {
     
-    func decoded<T: Decodable>(
-        decoder: JSONDecoder = .init(),
-        debugging: Bool = true) -> T? {
+    func decoded<T: Decodable>() -> T? {
         
         do {
             return try decoder.decode(T.self, from: self)
         } catch {
-            if debugging { print(error) }
+            #if DEBUG
+            print(error)
+            #endif
             return nil
+        }
+    }
+    
+    func decoded<T: Decodable>() -> Observable<T> {
+        
+        do {
+            return try .just(decoder.decode(T.self, from: self))
+        } catch {
+            #if DEBUG
+            print(error)
+            #endif
+            return .error(DomainError.parsing(error))
         }
     }
 }
@@ -23,14 +36,27 @@ extension Data {
     
     init?<T: Encodable>(
         _ model: T,
-        encoder: JSONEncoder = .init(),
-        debugging: Bool = true) {
+        encoder: JSONEncoder = .init()) {
         
         do {
             self = try encoder.encode(model)
         } catch {
-            if debugging { print(error) }
+            #if DEBUG
+            print(error)
+            #endif
             return nil
         }
+    }
+}
+
+// MARK: - JSONDecoder
+
+extension Data {
+    
+    var decoder: JSONDecoder {
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Short)
+        return decoder
     }
 }

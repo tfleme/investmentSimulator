@@ -10,4 +10,8 @@ extension Date {
         
         self = date
     }
+    
+    var backendString: String {
+        return DateFormatter.backendDateFormatter.string(from: self)
+    }
 }

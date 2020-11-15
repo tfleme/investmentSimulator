@@ -15,4 +15,11 @@ extension DateFormatter {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter
     }
+    
+    static var iso8601Short: DateFormatter {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return dateFormatter
+    }
 }
