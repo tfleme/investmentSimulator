@@ -19,13 +19,25 @@ final class AppCoordinator {
         self.window = window
         self.factory = factory
         
-        /// instanciate, set and start a coordinator
+        setupNavigationBar()
         
+        /// instanciate, set and start a coordinator
         simulatorCoordinator = SimulatorCoordinator(navigationController: navigationController, factory: factory)
         simulatorCoordinator?.start()
         
+        /// Update window
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
+    }
+}
+
+// MARK: - Private methods
+
+extension AppCoordinator {
+    
+    private func setupNavigationBar() {
+        
+        navigationController.navigationBar.tintColor = .primaryGreen
     }
 }
 

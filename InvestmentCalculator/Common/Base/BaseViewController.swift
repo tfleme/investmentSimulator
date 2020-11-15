@@ -9,7 +9,6 @@ class BaseViewController: UIViewController {
 
     // MARK: - Public properties
     
-    let rightBarButtonTap = PublishRelay<Void>()
     weak var delegate: BaseViewControllerDelegate?
     
     // MARK: - View lifecycle
@@ -18,6 +17,17 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.delegate = self
+        setupLeftBarButton()
+    }
+}
+
+// MARK: - Private methods
+
+extension BaseViewController {
+    
+    private func setupLeftBarButton() {
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 }
 
@@ -31,15 +41,6 @@ extension BaseViewController: UINavigationControllerDelegate {
         if parent == nil {
             delegate?.didMoveFromNavigationStack(self)
         }
-    }
-}
-
-// MARK: - Public methods - Navigation item
-
-extension BaseViewController {
-    
-    @objc func handleRightBarButtonTap() {
-        rightBarButtonTap.accept(())
     }
 }
 

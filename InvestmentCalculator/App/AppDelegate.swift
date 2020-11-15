@@ -6,7 +6,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private properties
     
     private var appCoordinator: AppCoordinator!
-
 }
 
 // MARK: - UIApplicationDelegate
