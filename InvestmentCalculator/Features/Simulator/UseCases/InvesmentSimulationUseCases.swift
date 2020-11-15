@@ -1,19 +1,19 @@
 import Foundation
 import RxSwift
 
-protocol InvesmentSimulatorUseCasesType {
+protocol InvesmentSimulationUseCasesType {
     func simulate(with parameters: InvestmentSimulationParameters) -> Observable<InvestmentDetail>
 }
 
-final class InvesmentSimulatorUseCases: InvesmentSimulatorUseCasesType {
+final class InvesmentSimulationUseCases: InvesmentSimulationUseCasesType {
     
     // MARK: - Private properties
     
-    private let service: InvesmentSimulatorServiceType
+    private let service: InvesmentSimulationServiceType
     
     // MARK: - Initializers
     
-    init(service: InvesmentSimulatorServiceType) {
+    init(service: InvesmentSimulationServiceType) {
         
         self.service = service
     }

@@ -2,11 +2,11 @@ import Foundation
 import RxSwift
 import Network
 
-protocol InvesmentSimulatorServiceType {
+protocol InvesmentSimulationServiceType {
     func simulate(with parameters: InvestmentSimulationParameters) -> Observable<InvestmentDetail>
 }
 
-final class InvesmentSimulatorService: InvesmentSimulatorServiceType {
+final class InvesmentSimulationService: InvesmentSimulationServiceType {
     
     // MARK: - Private properties
     
@@ -14,7 +14,7 @@ final class InvesmentSimulatorService: InvesmentSimulatorServiceType {
 
     // MARK: - Initializers
     
-    init(network: ReactiveNetworkAdapterType = NetworkAdapter()) {
+    init(network: ReactiveNetworkAdapterType) {
         
         self.network = network
     }

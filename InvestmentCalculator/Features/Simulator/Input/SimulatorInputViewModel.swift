@@ -14,7 +14,7 @@ final class SimulatorInputViewModel: ViewModelOutputType {
     private let disposeBag = DisposeBag()
     
     private weak var delegate: SimulatorInputViewModelDelegate?
-    private let useCases: InvesmentSimulatorUseCasesType
+    private let useCases: InvesmentSimulationUseCasesType
     
     private let simulationParameters = BehaviorRelay<InvestmentSimulationParameters?>(value: nil)
     
@@ -35,7 +35,7 @@ final class SimulatorInputViewModel: ViewModelOutputType {
     
     // MARK: - Initializers
 
-    init(delegate: SimulatorInputViewModelDelegate, useCases: InvesmentSimulatorUseCasesType) {
+    init(delegate: SimulatorInputViewModelDelegate, useCases: InvesmentSimulationUseCasesType) {
         
         self.delegate = delegate
         self.useCases = useCases

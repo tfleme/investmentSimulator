@@ -17,7 +17,7 @@ extension AppDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        appCoordinator = AppCoordinator(window: UIWindow(frame: UIScreen.main.bounds))
+        appCoordinator = AppCoordinator(window: UIWindow(frame: UIScreen.main.bounds), factory: DependencyContainer())
         
         return true
     }

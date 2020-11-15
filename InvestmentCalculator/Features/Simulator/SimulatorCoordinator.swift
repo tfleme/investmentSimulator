@@ -2,26 +2,26 @@ import UIKit
 
 final class SimulatorCoordinator: BaseCoordinator {
     
+    typealias Factory = InvesmentSimulationUseCasesFactory
+    
     // MARK: - Private properties
     
     private let navigationController: UINavigationController
-    
-    // MARK: - Public properties
+    private let factory: Factory
     
     // MARK: - Initializers
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, factory: Factory) {
         
         self.navigationController = navigationController
+        self.factory = factory
     }
     
     // MARK: - Public methods
     
     override func start() {
         
-        let service = InvesmentSimulatorService()
-        let useCases = InvesmentSimulatorUseCases(service: service)
-        let viewModel = SimulatorInputViewModel(delegate: self, useCases: useCases)
+        let viewModel = SimulatorInputViewModel(delegate: self, useCases: factory.makeInvesmentSimulationUseCases())
         let viewController = SimulatorInputController(viewModel: viewModel)
         
         rootViewController = viewController
