@@ -35,5 +35,20 @@ extension SimulatorCoordinator: SimulatorInputViewModelDelegate {
     
     func didSimulate(with detail: InvestmentDetail) {
         
+        let viewModel = InvestmentSimulationDetailViewModel(delegate: self, detail: detail)
+        let viewController = InvestmentSimulationDetailController(viewModel: viewModel)
+        
+        rootViewController = viewController
+        navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+// MARK: - SimulatorInputViewModelDelegate
+
+extension SimulatorCoordinator: InvestmentSimulationDetailViewModelDelegate {
+    
+    func didSelectSimulate() {
+        
+        navigationController.popViewController(animated: true)
     }
 }
