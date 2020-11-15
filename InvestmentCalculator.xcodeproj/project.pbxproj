@@ -28,6 +28,7 @@
 		82AAEA642561B8F5000D5EAF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA632561B8F5000D5EAF /* DateFormatter+Extensions.swift */; };
 		82AAEA692561B988000D5EAF /* InvestmentAmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA682561B988000D5EAF /* InvestmentAmountViewModel.swift */; };
 		82AAEA6E2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA6D2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift */; };
+		82AAEA772561C5CA000D5EAF /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 82AAEA762561C5CA000D5EAF /* Network */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		82AAEA632561B8F5000D5EAF /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		82AAEA682561B988000D5EAF /* InvestmentAmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAmountViewModel.swift; sourceTree = "<group>"; };
 		82AAEA6D2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentPerformanceViewModel.swift; sourceTree = "<group>"; };
+		82AAEA742561C526000D5EAF /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				829462B52470D55C00E8ADEA /* RxCocoa in Frameworks */,
 				829462B32470D55C00E8ADEA /* RxSwift in Frameworks */,
 				829462B12470D55C00E8ADEA /* RxRelay in Frameworks */,
+				82AAEA772561C5CA000D5EAF /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				82AAEA5025609843000D5EAF /* Components */,
+				82AAEA742561C526000D5EAF /* Network */,
 				82A8B3ED2470CFB900FE50A8 /* InvestmentCalculator */,
 				82A8B3EC2470CFB900FE50A8 /* Products */,
 				822BB4D1255C984700F28136 /* Frameworks */,
@@ -235,6 +239,7 @@
 				829462B22470D55C00E8ADEA /* RxSwift */,
 				829462B42470D55C00E8ADEA /* RxCocoa */,
 				82AAEA5325609A87000D5EAF /* Components */,
+				82AAEA762561C5CA000D5EAF /* Network */,
 			);
 			productName = Groceries;
 			productReference = 82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */;
@@ -530,6 +535,10 @@
 		82AAEA5325609A87000D5EAF /* Components */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Components;
+		};
+		82AAEA762561C5CA000D5EAF /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
