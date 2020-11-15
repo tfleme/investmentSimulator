@@ -33,4 +33,7 @@ final class SimulatorCoordinator: BaseCoordinator {
 
 extension SimulatorCoordinator: SimulatorInputViewModelDelegate {
     
+    func didSimulate(with detail: InvestmentDetail) {
+        
+    }
 }

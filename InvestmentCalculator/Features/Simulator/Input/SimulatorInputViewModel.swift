@@ -4,7 +4,7 @@ import RxCocoa
 import Components
 
 protocol SimulatorInputViewModelDelegate: class {
-    
+    func didSimulate(with detail: InvestmentDetail)
 }
 
 final class SimulatorInputViewModel: ViewModelOutputType {
@@ -75,7 +75,7 @@ extension SimulatorInputViewModel {
             .observeOn(MainScheduler.instance)
             .catchError(handleError)
             .do(onCompleted: hideLoading, onSubscribe: showLoading)
-            .subscribe(onNext: { print($0) })
+            .subscribe(onNext: { [weak self] in self?.delegate?.didSimulate(with: $0) })
             .disposed(by: disposeBag)
     }
 }
