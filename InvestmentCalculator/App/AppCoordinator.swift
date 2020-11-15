@@ -38,6 +38,9 @@ extension AppCoordinator {
     private func setupNavigationBar() {
         
         navigationController.navigationBar.tintColor = .primaryGreen
+        navigationController.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.mediumGray
+        ]
     }
 }
 

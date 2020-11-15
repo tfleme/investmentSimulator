@@ -41,6 +41,8 @@ extension InvestmentSimulationDetailController {
     
     private func setupUI() {
         
+        navigationItem.title = "Investimento"
+        
         customView.addStackableView(with: viewModel.summaryViewModel)
         customView.addStackableView(with: viewModel.parametersViewModel)
         customView.addStackableView(with: viewModel.detailsViewModel)

@@ -40,6 +40,8 @@ final class SimulatorInputController: BaseViewController {
 extension SimulatorInputController {
     
     private func setupUI() {
+        
+        navigationItem.title = "Simulador"
 
         customView.addStackableView(with: viewModel.amountViewModel)
         customView.addStackableView(with: viewModel.expirationDateViewModel)
