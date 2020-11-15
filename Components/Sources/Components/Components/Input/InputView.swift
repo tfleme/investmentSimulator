@@ -14,6 +14,7 @@ public class InputView: UIView {
     private let dividerView = DividerView()
     private let errorLabel = Label(textStyle: .callout, textColor: .alertRed)
     private let toolbar = SimpleToolbarView(doneButtonTitle: "Ok")
+    private let tapGesture = UITapGestureRecognizer()
     
     private var viewModel: InputViewModel?
     
@@ -71,6 +72,8 @@ extension InputView: ViewConfigurable {
     
     public func setupViews() {
         
+        addGestureRecognizer(tapGesture)
+        
         setupStackView()
         setupTextField()
     }
@@ -103,6 +106,11 @@ extension InputView {
 extension InputView {
     
     private func setupObservables(with viewModel: InputViewModel) {
+        
+        tapGesture.rx.event
+            .map { _ in }
+            .subscribe(onNext: { [weak self] in self?.textfield.becomeFirstResponder() })
+            .disposed(by: disposeBag)
         
         viewModel.isInputValid
             .bind(to: errorLabel.rx.isHidden)
