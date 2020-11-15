@@ -53,6 +53,10 @@ extension SimulatorInputController {
             .bind(to: customView.button.isLoading)
             .disposed(by: disposeBag)
  
+        viewModel.isButtonEnabled
+            .bind(to: customView.button.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
         customView.button.rx.tap
             .bind(to: viewModel.buttonTap)
             .disposed(by: disposeBag)

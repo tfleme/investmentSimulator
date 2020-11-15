@@ -14,6 +14,9 @@ final class SimulatorInputViewModel: ViewModelOutputType {
     private let disposeBag = DisposeBag()
     
     private weak var delegate: SimulatorInputViewModelDelegate?
+    private let useCases: InvesmentSimulatorUseCasesType
+    
+    private let simulationParameters = BehaviorRelay<InvestmentSimulationParameters?>(value: nil)
     
     // MARK: - Public properties - Input
     
@@ -28,11 +31,14 @@ final class SimulatorInputViewModel: ViewModelOutputType {
     let investmentPerformanceViewModel = InvestmentPerformanceViewModel()
     let buttonTitle: String = "Simular"
     
+    let isButtonEnabled = BehaviorRelay<Bool>(value: false)
+    
     // MARK: - Initializers
 
-    init(delegate: SimulatorInputViewModelDelegate) {
+    init(delegate: SimulatorInputViewModelDelegate, useCases: InvesmentSimulatorUseCasesType) {
         
         self.delegate = delegate
+        self.useCases = useCases
         
         setupObservables()
     }
@@ -48,22 +54,28 @@ extension SimulatorInputViewModel {
                 amountViewModel.amount,
                 expirationDateViewModel.expirationDate,
                 investmentPerformanceViewModel.performance)
-            .subscribe(onNext: { [weak self] amount, expirationDate, performance in
-
-                print("\(amount) : \(expirationDate) : \(performance)")
-            })
+            .compactMap(InvestmentSimulationParameters.init)
+            .bind(to: simulationParameters)
+            .disposed(by: disposeBag)
+        
+        simulationParameters
+            .map { $0 != nil }
+            .bind(to: isButtonEnabled)
             .disposed(by: disposeBag)
         
         buttonTap
-            .do(onNext: { [weak self] in
-                
-                self?.showLoading()
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-                    self?.hideLoading()
-                }
-            })
-            .subscribe()
+            .subscribe(onNext: { [weak self] in self?.simulate() })
+            .disposed(by: disposeBag)
+    }
+    
+    private func simulate() {
+        guard let simulationParameters = simulationParameters.value else { return }
+        
+        useCases.simulate(with: simulationParameters)
+            .observeOn(MainScheduler.instance)
+            .catchError(handleError)
+            .do(onCompleted: hideLoading, onSubscribe: showLoading)
+            .subscribe(onNext: { print($0) })
             .disposed(by: disposeBag)
     }
 }

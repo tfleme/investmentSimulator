@@ -29,6 +29,10 @@
 		82AAEA692561B988000D5EAF /* InvestmentAmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA682561B988000D5EAF /* InvestmentAmountViewModel.swift */; };
 		82AAEA6E2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA6D2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift */; };
 		82AAEA772561C5CA000D5EAF /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 82AAEA762561C5CA000D5EAF /* Network */; };
+		82AAEA7A2561C684000D5EAF /* InvesmentSimulatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA792561C684000D5EAF /* InvesmentSimulatorService.swift */; };
+		82AAEA7E2561C90B000D5EAF /* InvestmentSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA7D2561C90B000D5EAF /* InvestmentSimulation.swift */; };
+		82AAEA822561CB40000D5EAF /* InvestmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA812561CB40000D5EAF /* InvestmentDetail.swift */; };
+		82AAEA862561CEBF000D5EAF /* InvesmentSimulatorUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA852561CEBF000D5EAF /* InvesmentSimulatorUseCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		82AAEA682561B988000D5EAF /* InvestmentAmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAmountViewModel.swift; sourceTree = "<group>"; };
 		82AAEA6D2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentPerformanceViewModel.swift; sourceTree = "<group>"; };
 		82AAEA742561C526000D5EAF /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
+		82AAEA792561C684000D5EAF /* InvesmentSimulatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvesmentSimulatorService.swift; sourceTree = "<group>"; };
+		82AAEA7D2561C90B000D5EAF /* InvestmentSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentSimulation.swift; sourceTree = "<group>"; };
+		82AAEA812561CB40000D5EAF /* InvestmentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDetail.swift; sourceTree = "<group>"; };
+		82AAEA852561CEBF000D5EAF /* InvesmentSimulatorUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvesmentSimulatorUseCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,9 @@
 			children = (
 				822BB4D7255C98E400F28136 /* SimulatorCoordinator.swift */,
 				822BB4DA255C991800F28136 /* Input */,
+				82AAEA7C2561C8EC000D5EAF /* Model */,
+				82AAEA732561C4C2000D5EAF /* UseCases */,
+				82AAEA722561C4B6000D5EAF /* Services */,
 			);
 			path = Simulator;
 			sourceTree = "<group>";
@@ -218,6 +229,31 @@
 			path = Performance;
 			sourceTree = "<group>";
 		};
+		82AAEA722561C4B6000D5EAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82AAEA792561C684000D5EAF /* InvesmentSimulatorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82AAEA732561C4C2000D5EAF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				82AAEA852561CEBF000D5EAF /* InvesmentSimulatorUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		82AAEA7C2561C8EC000D5EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82AAEA7D2561C90B000D5EAF /* InvestmentSimulation.swift */,
+				82AAEA812561CB40000D5EAF /* InvestmentDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,14 +336,18 @@
 			files = (
 				829462AD2470D48A00E8ADEA /* AppCoordinator.swift in Sources */,
 				82AAEA6E2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift in Sources */,
+				82AAEA7E2561C90B000D5EAF /* InvestmentSimulation.swift in Sources */,
 				82A8B3EF2470CFB900FE50A8 /* AppDelegate.swift in Sources */,
 				822BB4DE255C993D00F28136 /* SimulatorInputController.swift in Sources */,
+				82AAEA7A2561C684000D5EAF /* InvesmentSimulatorService.swift in Sources */,
 				822BB4E0255C993D00F28136 /* SimulatorInputViewModel.swift in Sources */,
+				82AAEA822561CB40000D5EAF /* InvestmentDetail.swift in Sources */,
 				82A8B40B2470D11400FE50A8 /* BaseViewController.swift in Sources */,
 				82A8B4092470D0E200FE50A8 /* BaseCoordinator.swift in Sources */,
 				82AAEA692561B988000D5EAF /* InvestmentAmountViewModel.swift in Sources */,
 				82A8B40D2470D1A500FE50A8 /* Data+Codable.swift in Sources */,
 				82AAEA602561B6BA000D5EAF /* Date+Extensions.swift in Sources */,
+				82AAEA862561CEBF000D5EAF /* InvesmentSimulatorUseCases.swift in Sources */,
 				82AAEA5B2561B5A0000D5EAF /* InvestmentExpirationDateViewModel.swift in Sources */,
 				822BB4D8255C98E400F28136 /* SimulatorCoordinator.swift in Sources */,
 				829462CF2470DF1500E8ADEA /* DomainError.swift in Sources */,

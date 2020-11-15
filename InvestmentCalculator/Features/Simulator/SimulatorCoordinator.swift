@@ -19,7 +19,9 @@ final class SimulatorCoordinator: BaseCoordinator {
     
     override func start() {
         
-        let viewModel = SimulatorInputViewModel(delegate: self)
+        let service = InvesmentSimulatorService()
+        let useCases = InvesmentSimulatorUseCases(service: service)
+        let viewModel = SimulatorInputViewModel(delegate: self, useCases: useCases)
         let viewController = SimulatorInputController(viewModel: viewModel)
         
         rootViewController = viewController
