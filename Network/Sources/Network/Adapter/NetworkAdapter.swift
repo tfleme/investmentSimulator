@@ -96,7 +96,7 @@ extension NetworkAdapter {
     private func urlRequest(_ request: NetworkRequest) -> URLRequest {
         
         var urlRequest = URLRequest(
-            url: request.endpoint.url,
+            url: request.url,
             cachePolicy: .useProtocolCachePolicy,
             timeoutInterval: timeoutInterval)
         
