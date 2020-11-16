@@ -21,6 +21,7 @@ final class InvesmentSimulationServiceSpecs: QuickSpec {
                 context("when method is called") {
                     it("calls network.call(_:) method with proper parameters") {
 
+                        network.result = .just(Data(InvestmentDetail.mock())!)
                         service.simulate(with: .mock()).subscribe().disposed(by: disposeBag)
 
                         expect(network.request?.endpoint.httpMethod).to(equal(.get))
@@ -56,10 +57,11 @@ final class InvesmentSimulationServiceSpecs: QuickSpec {
 
 final class ReactiveNetworkAdapterStub: ReactiveNetworkAdapterType {
 
+    var result: Observable<Data> = .error(DomainError.generic)
     var request: NetworkRequest?
 
     func call(_ request: NetworkRequest) -> Observable<Data> {
         self.request = request
-        return .error(DomainError.generic)
+        return result
     }
 }

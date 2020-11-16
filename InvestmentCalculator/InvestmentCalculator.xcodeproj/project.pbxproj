@@ -394,9 +394,9 @@
 		82BCBD2625621E7A006A8AAF /* Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				82BCBD2925621E7A006A8AAF /* Stub */,
 				82BCBD2725621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift */,
 				82BCBD2825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift */,
-				82BCBD2925621E7A006A8AAF /* Stub */,
 				82BCBD2C25621E7A006A8AAF /* Domain */,
 			);
 			path = Simulator;
