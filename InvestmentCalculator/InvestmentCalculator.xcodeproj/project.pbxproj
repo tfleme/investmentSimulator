@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A6E042BD3AC09A663E4D1CA /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DF1CD13DEF5867FEA09BBB /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework */; };
+		821B0E8125623DEB004C0F0A /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B0E8025623DEB004C0F0A /* L10n.swift */; };
 		823C02B825622F53000A5A55 /* NetworkPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C02B725622F53000A5A55 /* NetworkPackage.framework */; };
 		823C02B925622F53000A5A55 /* NetworkPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 823C02B725622F53000A5A55 /* NetworkPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82818C8425622BA300D69D05 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82818C8325622BA300D69D05 /* Components.framework */; };
@@ -81,6 +82,7 @@
 		5330DDCA8139F0AD97846F89 /* Pods-InvestmentCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		5D4A6F29D090DD2D453948ED /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		821B0D9F2562326D004C0F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		821B0E8025623DEB004C0F0A /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		823C02B725622F53000A5A55 /* NetworkPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82818C8325622BA300D69D05 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestmentCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				82BCBCD525621E6F006A8AAF /* Localizable.strings */,
+				821B0E8025623DEB004C0F0A /* L10n.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -247,12 +250,12 @@
 		82BCBCDC25621E6F006A8AAF /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				82BCBCDD25621E6F006A8AAF /* ExpirationDate */,
 				82BCBCDF25621E6F006A8AAF /* Amount */,
-				82BCBCE125621E6F006A8AAF /* SimulatorInputViewModel.swift */,
-				82BCBCE225621E6F006A8AAF /* SimulatorInputView.swift */,
+				82BCBCDD25621E6F006A8AAF /* ExpirationDate */,
 				82BCBCE325621E6F006A8AAF /* Performance */,
 				82BCBCE525621E6F006A8AAF /* SimulatorInputController.swift */,
+				82BCBCE125621E6F006A8AAF /* SimulatorInputViewModel.swift */,
+				82BCBCE225621E6F006A8AAF /* SimulatorInputView.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -312,8 +315,8 @@
 		82BCBCF225621E6F006A8AAF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				82BCBCF325621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift */,
 				82BCBCF425621E6F006A8AAF /* InvesmentSimulationService.swift */,
+				82BCBCF325621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				829D75472561F72E006090FB /* Swift lint */,
 				82818C8625622BA300D69D05 /* Embed Frameworks */,
 				09586A6C5C451507612B88DF /* [CP] Embed Pods Frameworks */,
+				821B0E6C25623C9F004C0F0A /* SwiftGen - Localized String */,
 			);
 			buildRules = (
 			);
@@ -579,6 +583,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		821B0E6C25623C9F004C0F0A /* SwiftGen - Localized String */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen - Localized String";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\" run strings -t structured-swift4 \"${SOURCE_ROOT}/InvestmentCalculator/Resources/Strings/Localizable.strings\" --output \"${SOURCE_ROOT}/InvestmentCalculator/Resources/Strings/L10n.swift\"\n";
+		};
 		829D75472561F72E006090FB /* Swift lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -653,6 +675,7 @@
 				82BCBD0F25621E6F006A8AAF /* InvestmentSimulationDetailViewModel.swift in Sources */,
 				82BCBD0225621E6F006A8AAF /* AppDelegate.swift in Sources */,
 				82BCBD1425621E6F006A8AAF /* InvesmentSimulationUseCasesFactory.swift in Sources */,
+				821B0E8125623DEB004C0F0A /* L10n.swift in Sources */,
 				82BCBD0725621E6F006A8AAF /* InvestmentExpirationDateViewModel.swift in Sources */,
 				82BCBD0125621E6F006A8AAF /* AppCoordinator.swift in Sources */,
 				82BCBD1625621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift in Sources */,

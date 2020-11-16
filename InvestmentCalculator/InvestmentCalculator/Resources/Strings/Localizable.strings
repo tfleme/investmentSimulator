@@ -1,1 +1,47 @@
-"simulator.input.buttonTitle" = "Simular";
+// MARK: - Default
+
+"default.dayMonthYearMask" = "##/##/####";
+
+// MARK: - Simulator input
+
+"simulatorInput.navigationItem.title" = "Simulador";
+"simulatorInput.buttonTitle" = "Simular";
+"simulatorInput.amount.title" = "Quanto você gostaria de aplicar? *";
+"simulatorInput.amount.placeholder" = "R$";
+"simulatorInput.expirationDate.title" = "Qual a data de vencimento do investimento? *";
+"simulatorInput.expirationDate.placeholder" = "dia/mês/ano";
+"simulatorInput.expirationDate.error" = "Data inválida.";
+"simulatorInput.performance.title" = "Qual o percentual do CDI do investimento? *";
+"simulatorInput.performance.placeholder" = "100%";
+
+// MARK: - Simulator detail
+
+"simulatorDetail.navigationItem.title" = "Investimento";
+"simulatorDetail.buttonTitle" = "Simular novamente";
+"simulatorDetail.title" = "Resultado da simulação";
+"simulatorDetail.currency" = "Rendimento total de %@";
+"simulatorDetail.investedAmount" = "Valor aplicado inicialmente";
+"simulatorDetail.grossAmount" = "Valor bruto do investimento";
+"simulatorDetail.grossProfit" = "Valor do rendimento";
+"simulatorDetail.taxesRate" = "IR sobre o investimento";
+"simulatorDetail.netAmount" = "Valor líquido do investimento";
+"simulatorDetail.maturityDate" = "Data de resgate";
+"simulatorDetail.maturityTotalDays" = "Dias corridos";
+"simulatorDetail.monthlyGrossProfit" = "Rendimento mensal";
+"simulatorDetail.rate" = "Percentual do CDI do investimento";
+"simulatorDetail.annualGrossProfit" = "Rentabilidade anual";
+"simulatorDetail.rateProfit" = "Rentabilidade no período";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,8 +17,8 @@ final class InvestmentPerformanceViewModel: PercentageInputViewModel {
 
     init() {
 
-        super.init(title: "Qual o percentual do CDI do investimento? *",
-                   placeholder: "100%")
+        super.init(title: L10n.SimulatorInput.Performance.title,
+                   placeholder: L10n.SimulatorInput.Performance.placeholder)
 
         setupObservables()
     }

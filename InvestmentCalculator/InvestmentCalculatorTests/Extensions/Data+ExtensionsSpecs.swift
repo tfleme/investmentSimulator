@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+#warning("Tiago Leme: Add tests")

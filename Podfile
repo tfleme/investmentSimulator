@@ -2,10 +2,9 @@
 platform :ios, '11.0'
 
 use_frameworks!
+inhibit_all_warnings!
 
 workspace 'InvestmentCalculator'
-
-pod 'SwiftLint'
 
 # Define main test pods.
 def common_test_pods
@@ -17,6 +16,8 @@ abstract_target 'InvestmentCalculatorTargets' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SwiftLint'
+  pod 'SwiftGen'
 
   target 'InvestmentCalculator' do
     project 'InvestmentCalculator/InvestmentCalculator.xcodeproj'

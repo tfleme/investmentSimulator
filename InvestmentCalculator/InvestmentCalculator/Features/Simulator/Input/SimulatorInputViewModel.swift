@@ -29,7 +29,7 @@ final class SimulatorInputViewModel: ViewModelOutputType {
     let amountViewModel = InvestmentAmountViewModel()
     let expirationDateViewModel = InvestmentExpirationDateViewModel()
     let investmentPerformanceViewModel = InvestmentPerformanceViewModel()
-    let buttonTitle: String = "Simular"
+    let buttonTitle = L10n.SimulatorInput.buttonTitle
 
     let isButtonEnabled = BehaviorRelay<Bool>(value: false)
 
@@ -42,6 +42,7 @@ final class SimulatorInputViewModel: ViewModelOutputType {
 
         setupObservables()
     }
+
 }
 
 // MARK: - Private methods

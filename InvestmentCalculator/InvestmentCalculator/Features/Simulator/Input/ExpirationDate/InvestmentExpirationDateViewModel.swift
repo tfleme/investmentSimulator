@@ -17,11 +17,11 @@ final class InvestmentExpirationDateViewModel: InputViewModel {
 
     init() {
 
-        super.init(title: "Qual a data de vencimento do investimento? *",
-                   placeholder: "dia/mês/ano",
-                   errorText: "Data inválida.",
+        super.init(title: L10n.SimulatorInput.ExpirationDate.title,
+                   placeholder: L10n.SimulatorInput.ExpirationDate.placeholder,
+                   errorText: L10n.SimulatorInput.ExpirationDate.error,
                    keyboardType: .numberPad,
-                   mask: "##/##/####")
+                   mask: L10n.Default.dayMonthYearMask)
 
         setupObservables()
     }
@@ -32,6 +32,8 @@ final class InvestmentExpirationDateViewModel: InputViewModel {
 extension InvestmentExpirationDateViewModel {
 
     private func setupObservables() {
+
+        #warning("Tiago Leme: Add validation logic")
 
         text
             .map { Date(withString: $0) }

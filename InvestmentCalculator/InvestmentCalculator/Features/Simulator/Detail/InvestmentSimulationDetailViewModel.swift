@@ -9,6 +9,8 @@ protocol InvestmentSimulationDetailViewModelDelegate: class {
 
 final class InvestmentSimulationDetailViewModel {
 
+    typealias Localizabe = L10n.SimulatorDetail
+
     // MARK: - Private properties
 
     private let disposeBag = DisposeBag()
@@ -25,7 +27,7 @@ final class InvestmentSimulationDetailViewModel {
     let parametersViewModel: DetailListViewModel
     let detailsViewModel: DetailListViewModel
 
-    let buttonTitle = "Simular novamente"
+    let buttonTitle = Localizabe.buttonTitle
 
     // MARK: - Initializers
 
@@ -33,27 +35,27 @@ final class InvestmentSimulationDetailViewModel {
 
         self.delegate = delegate
         self.summaryViewModel = CurrencyContentViewModel(
-            title: "Resultado da simulação",
+            title: Localizabe.title,
             currency: detail.grossAmount.currencyString,
-            description: "Rendimento total de \(detail.grossAmountProfit.currencyString)")
+            description: Localizabe.currency(detail.grossAmountProfit.currencyString))
         self.parametersViewModel = DetailListViewModel(detailViewModels: [
             DetailViewModel(
-                title: "Valor aplicado inicialmente",
+                title: Localizabe.investedAmount,
                 value: detail.investmentParameter.investedAmount.currencyString),
-            DetailViewModel(title: "Valor bruto do investimento", value: detail.grossAmount.currencyString),
-            DetailViewModel(title: "Valor do rendimento", value: detail.grossAmountProfit.currencyString),
-            DetailViewModel(title: "IR sobre o investimento", value: detail.taxesRate.currencyString),
-            DetailViewModel(title: "Valor líquido do investimento", value: detail.netAmount.currencyString)
+            DetailViewModel(title: Localizabe.grossAmount, value: detail.grossAmount.currencyString),
+            DetailViewModel(title: Localizabe.grossProfit, value: detail.grossAmountProfit.currencyString),
+            DetailViewModel(title: Localizabe.taxesRate, value: detail.taxesRate.currencyString),
+            DetailViewModel(title: Localizabe.netAmount, value: detail.netAmount.currencyString)
         ])
         self.detailsViewModel = DetailListViewModel(detailViewModels: [
-            DetailViewModel(title: "Data de resgate", value: detail.investmentParameter.maturityDate.appString),
-            DetailViewModel(title: "Dias corridos", value: "\(detail.investmentParameter.maturityTotalDays)"),
-            DetailViewModel(title: "Rendimento mensal", value: detail.monthlyGrossRateProfit.percentString),
+            DetailViewModel(title: Localizabe.maturityDate, value: detail.investmentParameter.maturityDate.appString),
             DetailViewModel(
-                title: "Percentual do CDI do investimento",
-                value: detail.investmentParameter.rate.percentString),
-            DetailViewModel(title: "Rentabilidade anual", value: detail.annualGrossRateProfit.percentString),
-            DetailViewModel(title: "Rentabilidade no período", value: detail.rateProfit.percentString)
+                title: Localizabe.maturityTotalDays,
+                value: "\(detail.investmentParameter.maturityTotalDays)"),
+            DetailViewModel(title: Localizabe.monthlyGrossProfit, value: detail.monthlyGrossRateProfit.percentString),
+            DetailViewModel(title: Localizabe.rate, value: detail.investmentParameter.rate.percentString),
+            DetailViewModel(title: Localizabe.annualGrossProfit, value: detail.annualGrossRateProfit.percentString),
+            DetailViewModel(title: Localizabe.rateProfit, value: detail.rateProfit.percentString)
         ])
 
         setupObservables()

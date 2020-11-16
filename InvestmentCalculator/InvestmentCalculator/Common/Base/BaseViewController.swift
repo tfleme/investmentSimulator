@@ -43,18 +43,3 @@ extension BaseViewController: UINavigationControllerDelegate {
         }
     }
 }
-
-// MARK: - Public methods - Navigation
-
-extension BaseViewController {
-
-    func popViewControllerStack(animated: Bool) {
-
-        if navigationController?.viewControllers.first === self {
-            navigationController?.setViewControllers([], animated: animated)
-        } else {
-            navigationController?.popToViewController(self, animated: false)
-            navigationController?.popViewController(animated: animated)
-        }
-    }
-}

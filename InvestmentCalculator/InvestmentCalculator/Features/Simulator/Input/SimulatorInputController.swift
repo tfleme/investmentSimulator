@@ -41,7 +41,7 @@ extension SimulatorInputController {
 
     private func setupUI() {
 
-        navigationItem.title = "Simulador"
+        navigationItem.title = L10n.SimulatorInput.NavigationItem.title
 
         customView.addStackableView(with: viewModel.amountViewModel)
         customView.addStackableView(with: viewModel.expirationDateViewModel)
