@@ -11,6 +11,9 @@
 		822BB4DE255C993D00F28136 /* SimulatorInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822BB4DB255C993D00F28136 /* SimulatorInputController.swift */; };
 		822BB4DF255C993D00F28136 /* SimulatorInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822BB4DC255C993D00F28136 /* SimulatorInputView.swift */; };
 		822BB4E0255C993D00F28136 /* SimulatorInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822BB4DD255C993D00F28136 /* SimulatorInputViewModel.swift */; };
+		823221072561FAEE00FC3019 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 823221062561FAEE00FC3019 /* RxSwift */; };
+		823221092561FAEE00FC3019 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 823221082561FAEE00FC3019 /* RxCocoa */; };
+		8232210B2561FAEE00FC3019 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8232210A2561FAEE00FC3019 /* RxRelay */; };
 		829462AD2470D48A00E8ADEA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829462AC2470D48A00E8ADEA /* AppCoordinator.swift */; };
 		829462CF2470DF1500E8ADEA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829462CE2470DF1500E8ADEA /* DomainError.swift */; };
 		82A8B3EF2470CFB900FE50A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A8B3EE2470CFB900FE50A8 /* AppDelegate.swift */; };
@@ -19,13 +22,11 @@
 		82A8B4092470D0E200FE50A8 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A8B4082470D0E200FE50A8 /* BaseCoordinator.swift */; };
 		82A8B40B2470D11400FE50A8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A8B40A2470D11400FE50A8 /* BaseViewController.swift */; };
 		82A8B40D2470D1A500FE50A8 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A8B40C2470D1A500FE50A8 /* Data+Codable.swift */; };
-		82AAEA5425609A87000D5EAF /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = 82AAEA5325609A87000D5EAF /* Components */; };
 		82AAEA5B2561B5A0000D5EAF /* InvestmentExpirationDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA592561B5A0000D5EAF /* InvestmentExpirationDateViewModel.swift */; };
 		82AAEA602561B6BA000D5EAF /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA5F2561B6BA000D5EAF /* Date+Extensions.swift */; };
 		82AAEA642561B8F5000D5EAF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA632561B8F5000D5EAF /* DateFormatter+Extensions.swift */; };
 		82AAEA692561B988000D5EAF /* InvestmentAmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA682561B988000D5EAF /* InvestmentAmountViewModel.swift */; };
 		82AAEA6E2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA6D2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift */; };
-		82AAEA772561C5CA000D5EAF /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 82AAEA762561C5CA000D5EAF /* Network */; };
 		82AAEA7A2561C684000D5EAF /* InvesmentSimulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA792561C684000D5EAF /* InvesmentSimulationService.swift */; };
 		82AAEA7E2561C90B000D5EAF /* InvestmentSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA7D2561C90B000D5EAF /* InvestmentSimulation.swift */; };
 		82AAEA822561CB40000D5EAF /* InvestmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA812561CB40000D5EAF /* InvestmentDetail.swift */; };
@@ -37,6 +38,8 @@
 		82AAEA9C2561DD8A000D5EAF /* InvestmentSimulationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA992561DD8A000D5EAF /* InvestmentSimulationDetailView.swift */; };
 		82AAEA9D2561DD8A000D5EAF /* InvestmentSimulationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA9A2561DD8A000D5EAF /* InvestmentSimulationDetailViewModel.swift */; };
 		82AAEAA42561EB8E000D5EAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82AAEAA32561EB8E000D5EAF /* Localizable.strings */; };
+		82B367DA2561FBB6004A272C /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = 82B367D92561FBB6004A272C /* Components */; };
+		82B367DC2561FBB6004A272C /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 82B367DB2561FBB6004A272C /* Network */; };
 		B5454BFA31BE28300FDC6CEF /* Pods_InvestmentCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326856D9CDDE3A2DA1879BA7 /* Pods_InvestmentCalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,13 +59,11 @@
 		82A8B4082470D0E200FE50A8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		82A8B40A2470D11400FE50A8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		82A8B40C2470D1A500FE50A8 /* Data+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
-		82AAEA5025609843000D5EAF /* Components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Components; sourceTree = "<group>"; };
 		82AAEA592561B5A0000D5EAF /* InvestmentExpirationDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentExpirationDateViewModel.swift; sourceTree = "<group>"; };
 		82AAEA5F2561B6BA000D5EAF /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		82AAEA632561B8F5000D5EAF /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		82AAEA682561B988000D5EAF /* InvestmentAmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAmountViewModel.swift; sourceTree = "<group>"; };
 		82AAEA6D2561BE48000D5EAF /* InvestmentPerformanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentPerformanceViewModel.swift; sourceTree = "<group>"; };
-		82AAEA742561C526000D5EAF /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
 		82AAEA792561C684000D5EAF /* InvesmentSimulationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationService.swift; sourceTree = "<group>"; };
 		82AAEA7D2561C90B000D5EAF /* InvestmentSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentSimulation.swift; sourceTree = "<group>"; };
 		82AAEA812561CB40000D5EAF /* InvestmentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDetail.swift; sourceTree = "<group>"; };
@@ -83,8 +84,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82AAEA5425609A87000D5EAF /* Components in Frameworks */,
-				82AAEA772561C5CA000D5EAF /* Network in Frameworks */,
+				8232210B2561FAEE00FC3019 /* RxRelay in Frameworks */,
+				823221092561FAEE00FC3019 /* RxCocoa in Frameworks */,
+				823221072561FAEE00FC3019 /* RxSwift in Frameworks */,
+				82B367DC2561FBB6004A272C /* Network in Frameworks */,
+				82B367DA2561FBB6004A272C /* Components in Frameworks */,
 				B5454BFA31BE28300FDC6CEF /* Pods_InvestmentCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +150,6 @@
 		82A8B3E22470CFB900FE50A8 = {
 			isa = PBXGroup;
 			children = (
-				82AAEA5025609843000D5EAF /* Components */,
-				82AAEA742561C526000D5EAF /* Network */,
 				82A8B3ED2470CFB900FE50A8 /* InvestmentCalculator */,
 				82A8B3EC2470CFB900FE50A8 /* Products */,
 				822BB4D1255C984700F28136 /* Frameworks */,
@@ -328,8 +330,11 @@
 			);
 			name = InvestmentCalculator;
 			packageProductDependencies = (
-				82AAEA5325609A87000D5EAF /* Components */,
-				82AAEA762561C5CA000D5EAF /* Network */,
+				823221062561FAEE00FC3019 /* RxSwift */,
+				823221082561FAEE00FC3019 /* RxCocoa */,
+				8232210A2561FAEE00FC3019 /* RxRelay */,
+				82B367D92561FBB6004A272C /* Components */,
+				82B367DB2561FBB6004A272C /* Network */,
 			);
 			productName = Groceries;
 			productReference = 82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */;
@@ -342,7 +347,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Tiago Leme";
 				TargetAttributes = {
 					82A8B3EA2470CFB900FE50A8 = {
@@ -359,6 +364,9 @@
 				Base,
 			);
 			mainGroup = 82A8B3E22470CFB900FE50A8;
+			packageReferences = (
+				823221052561FAEE00FC3019 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 82A8B3EC2470CFB900FE50A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -497,6 +505,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -557,6 +566,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -648,12 +658,38 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		823221052561FAEE00FC3019 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		82AAEA5325609A87000D5EAF /* Components */ = {
+		823221062561FAEE00FC3019 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 823221052561FAEE00FC3019 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		823221082561FAEE00FC3019 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 823221052561FAEE00FC3019 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8232210A2561FAEE00FC3019 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 823221052561FAEE00FC3019 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		82B367D92561FBB6004A272C /* Components */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Components;
 		};
-		82AAEA762561C5CA000D5EAF /* Network */ = {
+		82B367DB2561FBB6004A272C /* Network */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Network;
 		};

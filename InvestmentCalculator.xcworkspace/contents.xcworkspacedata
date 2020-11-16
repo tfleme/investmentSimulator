@@ -5,6 +5,12 @@
       location = "group:InvestmentCalculator.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Components">
+   </FileRef>
+   <FileRef
+      location = "group:Network">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
