@@ -25,9 +25,6 @@ final class InvesmentSimulationUseCases: InvesmentSimulationUseCasesType {
 
         self.service = service
     }
-
-    // MARK: - Public methods
-
 }
 
 // MARK: - InvesmentSimulatorUseCasesType
