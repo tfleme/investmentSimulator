@@ -12,9 +12,6 @@
 		822BB4DF255C993D00F28136 /* SimulatorInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822BB4DC255C993D00F28136 /* SimulatorInputView.swift */; };
 		822BB4E0255C993D00F28136 /* SimulatorInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822BB4DD255C993D00F28136 /* SimulatorInputViewModel.swift */; };
 		829462AD2470D48A00E8ADEA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829462AC2470D48A00E8ADEA /* AppCoordinator.swift */; };
-		829462B12470D55C00E8ADEA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 829462B02470D55C00E8ADEA /* RxRelay */; };
-		829462B32470D55C00E8ADEA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 829462B22470D55C00E8ADEA /* RxSwift */; };
-		829462B52470D55C00E8ADEA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 829462B42470D55C00E8ADEA /* RxCocoa */; };
 		829462CF2470DF1500E8ADEA /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829462CE2470DF1500E8ADEA /* DomainError.swift */; };
 		82A8B3EF2470CFB900FE50A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A8B3EE2470CFB900FE50A8 /* AppDelegate.swift */; };
 		82A8B3F82470CFBB00FE50A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A8B3F72470CFBB00FE50A8 /* Assets.xcassets */; };
@@ -39,9 +36,12 @@
 		82AAEA9B2561DD8A000D5EAF /* InvestmentSimulationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA982561DD8A000D5EAF /* InvestmentSimulationDetailController.swift */; };
 		82AAEA9C2561DD8A000D5EAF /* InvestmentSimulationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA992561DD8A000D5EAF /* InvestmentSimulationDetailView.swift */; };
 		82AAEA9D2561DD8A000D5EAF /* InvestmentSimulationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AAEA9A2561DD8A000D5EAF /* InvestmentSimulationDetailViewModel.swift */; };
+		82AAEAA42561EB8E000D5EAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82AAEAA32561EB8E000D5EAF /* Localizable.strings */; };
+		B5454BFA31BE28300FDC6CEF /* Pods_InvestmentCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326856D9CDDE3A2DA1879BA7 /* Pods_InvestmentCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		326856D9CDDE3A2DA1879BA7 /* Pods_InvestmentCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		822BB4D7255C98E400F28136 /* SimulatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorCoordinator.swift; sourceTree = "<group>"; };
 		822BB4DB255C993D00F28136 /* SimulatorInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorInputController.swift; sourceTree = "<group>"; };
 		822BB4DC255C993D00F28136 /* SimulatorInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorInputView.swift; sourceTree = "<group>"; };
@@ -73,6 +73,9 @@
 		82AAEA982561DD8A000D5EAF /* InvestmentSimulationDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailController.swift; sourceTree = "<group>"; };
 		82AAEA992561DD8A000D5EAF /* InvestmentSimulationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailView.swift; sourceTree = "<group>"; };
 		82AAEA9A2561DD8A000D5EAF /* InvestmentSimulationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailViewModel.swift; sourceTree = "<group>"; };
+		82AAEAA32561EB8E000D5EAF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9567A5640586916AAC15E935 /* Pods-InvestmentCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		A6B99D8FE5ABD3F1CBEFFBFA /* Pods-InvestmentCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,19 +84,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				82AAEA5425609A87000D5EAF /* Components in Frameworks */,
-				829462B52470D55C00E8ADEA /* RxCocoa in Frameworks */,
-				829462B32470D55C00E8ADEA /* RxSwift in Frameworks */,
-				829462B12470D55C00E8ADEA /* RxRelay in Frameworks */,
 				82AAEA772561C5CA000D5EAF /* Network in Frameworks */,
+				B5454BFA31BE28300FDC6CEF /* Pods_InvestmentCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2C8276AC877980071C9895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9567A5640586916AAC15E935 /* Pods-InvestmentCalculator.debug.xcconfig */,
+				A6B99D8FE5ABD3F1CBEFFBFA /* Pods-InvestmentCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		822BB4D1255C984700F28136 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				326856D9CDDE3A2DA1879BA7 /* Pods_InvestmentCalculator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 				82A8B3ED2470CFB900FE50A8 /* InvestmentCalculator */,
 				82A8B3EC2470CFB900FE50A8 /* Products */,
 				822BB4D1255C984700F28136 /* Frameworks */,
+				0D2C8276AC877980071C9895 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +189,7 @@
 				82A8B3FC2470CFBB00FE50A8 /* Info.plist */,
 				82A8B3F92470CFBB00FE50A8 /* LaunchScreen.storyboard */,
 				82A8B3F72470CFBB00FE50A8 /* Assets.xcassets */,
+				82AAEAA62561EBBD000D5EAF /* Strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -288,6 +301,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		82AAEAA62561EBBD000D5EAF /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				82AAEAA32561EB8E000D5EAF /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A8B3FF2470CFBB00FE50A8 /* Build configuration list for PBXNativeTarget "InvestmentCalculator" */;
 			buildPhases = (
+				DA62E51C063BF3513A7AA2AD /* [CP] Check Pods Manifest.lock */,
 				82A8B3E72470CFB900FE50A8 /* Sources */,
 				82A8B3E82470CFB900FE50A8 /* Frameworks */,
 				82A8B3E92470CFB900FE50A8 /* Resources */,
+				829D75472561F72E006090FB /* Swift lint */,
 			);
 			buildRules = (
 			);
@@ -305,9 +328,6 @@
 			);
 			name = InvestmentCalculator;
 			packageProductDependencies = (
-				829462B02470D55C00E8ADEA /* RxRelay */,
-				829462B22470D55C00E8ADEA /* RxSwift */,
-				829462B42470D55C00E8ADEA /* RxCocoa */,
 				82AAEA5325609A87000D5EAF /* Components */,
 				82AAEA762561C5CA000D5EAF /* Network */,
 			);
@@ -339,9 +359,6 @@
 				Base,
 			);
 			mainGroup = 82A8B3E22470CFB900FE50A8;
-			packageReferences = (
-				829462AF2470D55C00E8ADEA /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = 82A8B3EC2470CFB900FE50A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,11 +374,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A8B3FB2470CFBB00FE50A8 /* LaunchScreen.storyboard in Resources */,
+				82AAEAA42561EB8E000D5EAF /* Localizable.strings in Resources */,
 				82A8B3F82470CFBB00FE50A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		829D75472561F72E006090FB /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		DA62E51C063BF3513A7AA2AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestmentCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82A8B3E72470CFB900FE50A8 /* Sources */ = {
@@ -526,6 +587,7 @@
 		};
 		82A8B4002470CFBB00FE50A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9567A5640586916AAC15E935 /* Pods-InvestmentCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +607,7 @@
 		};
 		82A8B4012470CFBB00FE50A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B99D8FE5ABD3F1CBEFFBFA /* Pods-InvestmentCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,33 +648,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		829462AF2470D55C00E8ADEA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		829462B02470D55C00E8ADEA /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 829462AF2470D55C00E8ADEA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		829462B22470D55C00E8ADEA /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 829462AF2470D55C00E8ADEA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		829462B42470D55C00E8ADEA /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 829462AF2470D55C00E8ADEA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
 		82AAEA5325609A87000D5EAF /* Components */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Components;
