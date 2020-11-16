@@ -10,8 +10,8 @@ public struct Endpoint {
 
     // MARK: - Internal properties
 
-    let httpMethod: HttpMethod
-    let url: URL
+    public let httpMethod: HttpMethod
+    public let url: URL
 
     // MARK: - Initialization
 

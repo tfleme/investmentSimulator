@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		165B77D4C786B8EAEA845566 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7434FF08C1B4723932944A6F /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a */; };
+		82818B5B256223D200D69D05 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82818B5A256223D200D69D05 /* Components.framework */; };
+		82BCBD0125621E6F006A8AAF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCD125621E6F006A8AAF /* AppCoordinator.swift */; };
+		82BCBD0225621E6F006A8AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCD225621E6F006A8AAF /* AppDelegate.swift */; };
+		82BCBD0325621E6F006A8AAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82BCBCD525621E6F006A8AAF /* Localizable.strings */; };
+		82BCBD0425621E6F006A8AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82BCBCD625621E6F006A8AAF /* Assets.xcassets */; };
+		82BCBD0525621E6F006A8AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BCBCD725621E6F006A8AAF /* LaunchScreen.storyboard */; };
+		82BCBD0725621E6F006A8AAF /* InvestmentExpirationDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCDE25621E6F006A8AAF /* InvestmentExpirationDateViewModel.swift */; };
+		82BCBD0825621E6F006A8AAF /* InvestmentAmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE025621E6F006A8AAF /* InvestmentAmountViewModel.swift */; };
+		82BCBD0925621E6F006A8AAF /* SimulatorInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE125621E6F006A8AAF /* SimulatorInputViewModel.swift */; };
+		82BCBD0A25621E6F006A8AAF /* SimulatorInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE225621E6F006A8AAF /* SimulatorInputView.swift */; };
+		82BCBD0B25621E6F006A8AAF /* InvestmentPerformanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE425621E6F006A8AAF /* InvestmentPerformanceViewModel.swift */; };
+		82BCBD0C25621E6F006A8AAF /* SimulatorInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE525621E6F006A8AAF /* SimulatorInputController.swift */; };
+		82BCBD0D25621E6F006A8AAF /* InvestmentSimulationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE725621E6F006A8AAF /* InvestmentSimulationDetailController.swift */; };
+		82BCBD0E25621E6F006A8AAF /* InvestmentSimulationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE825621E6F006A8AAF /* InvestmentSimulationDetailView.swift */; };
+		82BCBD0F25621E6F006A8AAF /* InvestmentSimulationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCE925621E6F006A8AAF /* InvestmentSimulationDetailViewModel.swift */; };
+		82BCBD1025621E6F006A8AAF /* InvestmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCEB25621E6F006A8AAF /* InvestmentDetail.swift */; };
+		82BCBD1125621E6F006A8AAF /* InvestmentSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCEC25621E6F006A8AAF /* InvestmentSimulation.swift */; };
+		82BCBD1225621E6F006A8AAF /* SimulatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCED25621E6F006A8AAF /* SimulatorCoordinator.swift */; };
+		82BCBD1325621E6F006A8AAF /* InvesmentSimulationUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCEF25621E6F006A8AAF /* InvesmentSimulationUseCases.swift */; };
+		82BCBD1425621E6F006A8AAF /* InvesmentSimulationUseCasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCF025621E6F006A8AAF /* InvesmentSimulationUseCasesFactory.swift */; };
+		82BCBD1625621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCF325621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift */; };
+		82BCBD1725621E6F006A8AAF /* InvesmentSimulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCF425621E6F006A8AAF /* InvesmentSimulationService.swift */; };
+		82BCBD1825621E6F006A8AAF /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCF725621E6F006A8AAF /* DateFormatter+Extensions.swift */; };
+		82BCBD1925621E6F006A8AAF /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCF825621E6F006A8AAF /* Date+Extensions.swift */; };
+		82BCBD1A25621E6F006A8AAF /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCF925621E6F006A8AAF /* Data+Codable.swift */; };
+		82BCBD1B25621E6F006A8AAF /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCFB25621E6F006A8AAF /* DomainError.swift */; };
+		82BCBD1C25621E6F006A8AAF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCFD25621E6F006A8AAF /* BaseViewController.swift */; };
+		82BCBD1D25621E6F006A8AAF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCFE25621E6F006A8AAF /* BaseCoordinator.swift */; };
+		82BCBD1E25621E6F006A8AAF /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD0025621E6F006A8AAF /* DependencyContainer.swift */; };
+		82BCBD3225621E7A006A8AAF /* Date+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2425621E7A006A8AAF /* Date+ExtensionsSpecs.swift */; };
+		82BCBD3425621E7A006A8AAF /* Data+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2525621E7A006A8AAF /* Data+ExtensionsSpecs.swift */; };
+		82BCBD3625621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2725621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift */; };
+		82BCBD3825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift */; };
+		82BCBD3A25621E7A006A8AAF /* InvestmentDetail+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2A25621E7A006A8AAF /* InvestmentDetail+Mock.swift */; };
+		82BCBD3C25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2B25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift */; };
+		82BCBD3E25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2D25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift */; };
+		82BCBD4025621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2E25621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift */; };
+		92E97A91A995728C149C5911 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAD28DBE83BA2305D07CA27 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82B367EF2561FCDC004A272C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82A8B3E32470CFB900FE50A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82A8B3EA2470CFB900FE50A8;
+			remoteInfo = InvestmentCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51CCB3E9108EB40EC1C40248 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator/Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		5330DDCA8139F0AD97846F89 /* Pods-InvestmentCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		5D4A6F29D090DD2D453948ED /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		7434FF08C1B4723932944A6F /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestmentCalculatorTargets-InvestmentCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82818B5A256223D200D69D05 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestmentCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B367EA2561FCDC004A272C /* InvestmentCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestmentCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BCBCC925621D50006A8AAF /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BCBCD125621E6F006A8AAF /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		82BCBCD225621E6F006A8AAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82BCBCD525621E6F006A8AAF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		82BCBCD625621E6F006A8AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82BCBCD825621E6F006A8AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82BCBCDE25621E6F006A8AAF /* InvestmentExpirationDateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentExpirationDateViewModel.swift; sourceTree = "<group>"; };
+		82BCBCE025621E6F006A8AAF /* InvestmentAmountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentAmountViewModel.swift; sourceTree = "<group>"; };
+		82BCBCE125621E6F006A8AAF /* SimulatorInputViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorInputViewModel.swift; sourceTree = "<group>"; };
+		82BCBCE225621E6F006A8AAF /* SimulatorInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorInputView.swift; sourceTree = "<group>"; };
+		82BCBCE425621E6F006A8AAF /* InvestmentPerformanceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentPerformanceViewModel.swift; sourceTree = "<group>"; };
+		82BCBCE525621E6F006A8AAF /* SimulatorInputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorInputController.swift; sourceTree = "<group>"; };
+		82BCBCE725621E6F006A8AAF /* InvestmentSimulationDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailController.swift; sourceTree = "<group>"; };
+		82BCBCE825621E6F006A8AAF /* InvestmentSimulationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailView.swift; sourceTree = "<group>"; };
+		82BCBCE925621E6F006A8AAF /* InvestmentSimulationDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailViewModel.swift; sourceTree = "<group>"; };
+		82BCBCEB25621E6F006A8AAF /* InvestmentDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentDetail.swift; sourceTree = "<group>"; };
+		82BCBCEC25621E6F006A8AAF /* InvestmentSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSimulation.swift; sourceTree = "<group>"; };
+		82BCBCED25621E6F006A8AAF /* SimulatorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorCoordinator.swift; sourceTree = "<group>"; };
+		82BCBCEF25621E6F006A8AAF /* InvesmentSimulationUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationUseCases.swift; sourceTree = "<group>"; };
+		82BCBCF025621E6F006A8AAF /* InvesmentSimulationUseCasesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationUseCasesFactory.swift; sourceTree = "<group>"; };
+		82BCBCF325621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationServiceFactory.swift; sourceTree = "<group>"; };
+		82BCBCF425621E6F006A8AAF /* InvesmentSimulationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationService.swift; sourceTree = "<group>"; };
+		82BCBCF725621E6F006A8AAF /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		82BCBCF825621E6F006A8AAF /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		82BCBCF925621E6F006A8AAF /* Data+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
+		82BCBCFB25621E6F006A8AAF /* DomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		82BCBCFD25621E6F006A8AAF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		82BCBCFE25621E6F006A8AAF /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		82BCBD0025621E6F006A8AAF /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		82BCBD2225621E7A006A8AAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82BCBD2425621E7A006A8AAF /* Date+ExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
+		82BCBD2525621E7A006A8AAF /* Data+ExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
+		82BCBD2725621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailViewModelSpecs.swift; sourceTree = "<group>"; };
+		82BCBD2825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorInputViewModelSpecs.swift; sourceTree = "<group>"; };
+		82BCBD2A25621E7A006A8AAF /* InvestmentDetail+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InvestmentDetail+Mock.swift"; sourceTree = "<group>"; };
+		82BCBD2B25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InvestmentSimulationParameters+Mock.swift"; sourceTree = "<group>"; };
+		82BCBD2D25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationUseCasesSpecs.swift; sourceTree = "<group>"; };
+		82BCBD2E25621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationServiceSpecs.swift; sourceTree = "<group>"; };
+		98D18372E5DC25068D78212F /* Pods-InvestmentCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		9AAD28DBE83BA2305D07CA27 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28D826C11901F76DA31B745 /* Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B84AC9CAD4218B465CA4FF /* Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		F3DDF8B24637A551C3CFC558 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE7F597F058E55BC5CDFD363 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator/Pods-InvestmentCalculatorTargets-InvestmentCalculator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82A8B3E82470CFB900FE50A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82818B5B256223D200D69D05 /* Components.framework in Frameworks */,
+				165B77D4C786B8EAEA845566 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B367E72561FCDC004A272C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E97A91A995728C149C5911 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		822BB4D1255C984700F28136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82818B5A256223D200D69D05 /* Components.framework */,
+				82BCBCC925621D50006A8AAF /* Components.framework */,
+				7434FF08C1B4723932944A6F /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a */,
+				9AAD28DBE83BA2305D07CA27 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82A8B3E22470CFB900FE50A8 = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2025621E7A006A8AAF /* InvestmentCalculatorTests */,
+				82BCBCCF25621E6F006A8AAF /* InvestmentCalculator */,
+				82A8B3EC2470CFB900FE50A8 /* Products */,
+				822BB4D1255C984700F28136 /* Frameworks */,
+				86610C3E02FE437290E256E4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		82A8B3EC2470CFB900FE50A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */,
+				82B367EA2561FCDC004A272C /* InvestmentCalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82BCBCCF25621E6F006A8AAF /* InvestmentCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCD025621E6F006A8AAF /* App */,
+				82BCBCD325621E6F006A8AAF /* Resources */,
+				82BCBCDA25621E6F006A8AAF /* Features */,
+				82BCBCF525621E6F006A8AAF /* Common */,
+			);
+			path = InvestmentCalculator;
+			sourceTree = "<group>";
+		};
+		82BCBCD025621E6F006A8AAF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCD125621E6F006A8AAF /* AppCoordinator.swift */,
+				82BCBCD225621E6F006A8AAF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82BCBCD325621E6F006A8AAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCD425621E6F006A8AAF /* Strings */,
+				82BCBCD625621E6F006A8AAF /* Assets.xcassets */,
+				82BCBCD725621E6F006A8AAF /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82BCBCD425621E6F006A8AAF /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCD525621E6F006A8AAF /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		82BCBCDA25621E6F006A8AAF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCDB25621E6F006A8AAF /* Simulator */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		82BCBCDB25621E6F006A8AAF /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCDC25621E6F006A8AAF /* Input */,
+				82BCBCE625621E6F006A8AAF /* Detail */,
+				82BCBCEA25621E6F006A8AAF /* Model */,
+				82BCBCED25621E6F006A8AAF /* SimulatorCoordinator.swift */,
+				82BCBCEE25621E6F006A8AAF /* UseCases */,
+				82BCBCF225621E6F006A8AAF /* Services */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
+		82BCBCDC25621E6F006A8AAF /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCDD25621E6F006A8AAF /* ExpirationDate */,
+				82BCBCDF25621E6F006A8AAF /* Amount */,
+				82BCBCE125621E6F006A8AAF /* SimulatorInputViewModel.swift */,
+				82BCBCE225621E6F006A8AAF /* SimulatorInputView.swift */,
+				82BCBCE325621E6F006A8AAF /* Performance */,
+				82BCBCE525621E6F006A8AAF /* SimulatorInputController.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		82BCBCDD25621E6F006A8AAF /* ExpirationDate */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCDE25621E6F006A8AAF /* InvestmentExpirationDateViewModel.swift */,
+			);
+			path = ExpirationDate;
+			sourceTree = "<group>";
+		};
+		82BCBCDF25621E6F006A8AAF /* Amount */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCE025621E6F006A8AAF /* InvestmentAmountViewModel.swift */,
+			);
+			path = Amount;
+			sourceTree = "<group>";
+		};
+		82BCBCE325621E6F006A8AAF /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCE425621E6F006A8AAF /* InvestmentPerformanceViewModel.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		82BCBCE625621E6F006A8AAF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCE725621E6F006A8AAF /* InvestmentSimulationDetailController.swift */,
+				82BCBCE825621E6F006A8AAF /* InvestmentSimulationDetailView.swift */,
+				82BCBCE925621E6F006A8AAF /* InvestmentSimulationDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		82BCBCEA25621E6F006A8AAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCEB25621E6F006A8AAF /* InvestmentDetail.swift */,
+				82BCBCEC25621E6F006A8AAF /* InvestmentSimulation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82BCBCEE25621E6F006A8AAF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCEF25621E6F006A8AAF /* InvesmentSimulationUseCases.swift */,
+				82BCBCF025621E6F006A8AAF /* InvesmentSimulationUseCasesFactory.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		82BCBCF225621E6F006A8AAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCF325621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift */,
+				82BCBCF425621E6F006A8AAF /* InvesmentSimulationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82BCBCF525621E6F006A8AAF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCF625621E6F006A8AAF /* Extensions */,
+				82BCBCFA25621E6F006A8AAF /* Error */,
+				82BCBCFC25621E6F006A8AAF /* Base */,
+				82BCBCFF25621E6F006A8AAF /* DependencyContainer */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		82BCBCF625621E6F006A8AAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCF725621E6F006A8AAF /* DateFormatter+Extensions.swift */,
+				82BCBCF825621E6F006A8AAF /* Date+Extensions.swift */,
+				82BCBCF925621E6F006A8AAF /* Data+Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82BCBCFA25621E6F006A8AAF /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCFB25621E6F006A8AAF /* DomainError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		82BCBCFC25621E6F006A8AAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBCFD25621E6F006A8AAF /* BaseViewController.swift */,
+				82BCBCFE25621E6F006A8AAF /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		82BCBCFF25621E6F006A8AAF /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD0025621E6F006A8AAF /* DependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		82BCBD2025621E7A006A8AAF /* InvestmentCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2125621E7A006A8AAF /* Resources */,
+				82BCBD2325621E7A006A8AAF /* Extensions */,
+				82BCBD2625621E7A006A8AAF /* Simulator */,
+			);
+			path = InvestmentCalculatorTests;
+			sourceTree = "<group>";
+		};
+		82BCBD2125621E7A006A8AAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2225621E7A006A8AAF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82BCBD2325621E7A006A8AAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2425621E7A006A8AAF /* Date+ExtensionsSpecs.swift */,
+				82BCBD2525621E7A006A8AAF /* Data+ExtensionsSpecs.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82BCBD2625621E7A006A8AAF /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2725621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift */,
+				82BCBD2825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift */,
+				82BCBD2925621E7A006A8AAF /* Stub */,
+				82BCBD2C25621E7A006A8AAF /* Domain */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
+		82BCBD2925621E7A006A8AAF /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2A25621E7A006A8AAF /* InvestmentDetail+Mock.swift */,
+				82BCBD2B25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		82BCBD2C25621E7A006A8AAF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				82BCBD2D25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift */,
+				82BCBD2E25621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		86610C3E02FE437290E256E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5330DDCA8139F0AD97846F89 /* Pods-InvestmentCalculator.debug.xcconfig */,
+				98D18372E5DC25068D78212F /* Pods-InvestmentCalculator.release.xcconfig */,
+				E28D826C11901F76DA31B745 /* Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */,
+				E9B84AC9CAD4218B465CA4FF /* Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */,
+				51CCB3E9108EB40EC1C40248 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig */,
+				FE7F597F058E55BC5CDFD363 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.release.xcconfig */,
+				F3DDF8B24637A551C3CFC558 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */,
+				5D4A6F29D090DD2D453948ED /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82A8B3EA2470CFB900FE50A8 /* InvestmentCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82A8B3FF2470CFBB00FE50A8 /* Build configuration list for PBXNativeTarget "InvestmentCalculator" */;
+			buildPhases = (
+				5B7E907FA3789B65D89470AF /* [CP] Check Pods Manifest.lock */,
+				82A8B3E72470CFB900FE50A8 /* Sources */,
+				82A8B3E82470CFB900FE50A8 /* Frameworks */,
+				82A8B3E92470CFB900FE50A8 /* Resources */,
+				829D75472561F72E006090FB /* Swift lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvestmentCalculator;
+			packageProductDependencies = (
+			);
+			productName = Groceries;
+			productReference = 82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82B367E92561FCDC004A272C /* InvestmentCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B367F12561FCDC004A272C /* Build configuration list for PBXNativeTarget "InvestmentCalculatorTests" */;
+			buildPhases = (
+				F180BCF41171E1BA6E4D2E33 /* [CP] Check Pods Manifest.lock */,
+				82B367E62561FCDC004A272C /* Sources */,
+				82B367E72561FCDC004A272C /* Frameworks */,
+				82B367E82561FCDC004A272C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82B367F02561FCDC004A272C /* PBXTargetDependency */,
+			);
+			name = InvestmentCalculatorTests;
+			productName = InvestmentCalculatorTests;
+			productReference = 82B367EA2561FCDC004A272C /* InvestmentCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82A8B3E32470CFB900FE50A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Tiago Leme";
+				TargetAttributes = {
+					82A8B3EA2470CFB900FE50A8 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					82B367E92561FCDC004A272C = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+						TestTargetID = 82A8B3EA2470CFB900FE50A8;
+					};
+				};
+			};
+			buildConfigurationList = 82A8B3E62470CFB900FE50A8 /* Build configuration list for PBXProject "InvestmentCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82A8B3E22470CFB900FE50A8;
+			productRefGroup = 82A8B3EC2470CFB900FE50A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82A8B3EA2470CFB900FE50A8 /* InvestmentCalculator */,
+				82B367E92561FCDC004A272C /* InvestmentCalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82A8B3E92470CFB900FE50A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BCBD0525621E6F006A8AAF /* LaunchScreen.storyboard in Resources */,
+				82BCBD0425621E6F006A8AAF /* Assets.xcassets in Resources */,
+				82BCBD0325621E6F006A8AAF /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B367E82561FCDC004A272C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B7E907FA3789B65D89470AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestmentCalculatorTargets-InvestmentCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		829D75472561F72E006090FB /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		F180BCF41171E1BA6E4D2E33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82A8B3E72470CFB900FE50A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BCBD1A25621E6F006A8AAF /* Data+Codable.swift in Sources */,
+				82BCBD0925621E6F006A8AAF /* SimulatorInputViewModel.swift in Sources */,
+				82BCBD1025621E6F006A8AAF /* InvestmentDetail.swift in Sources */,
+				82BCBD1925621E6F006A8AAF /* Date+Extensions.swift in Sources */,
+				82BCBD1325621E6F006A8AAF /* InvesmentSimulationUseCases.swift in Sources */,
+				82BCBD1C25621E6F006A8AAF /* BaseViewController.swift in Sources */,
+				82BCBD1E25621E6F006A8AAF /* DependencyContainer.swift in Sources */,
+				82BCBD0F25621E6F006A8AAF /* InvestmentSimulationDetailViewModel.swift in Sources */,
+				82BCBD0225621E6F006A8AAF /* AppDelegate.swift in Sources */,
+				82BCBD1425621E6F006A8AAF /* InvesmentSimulationUseCasesFactory.swift in Sources */,
+				82BCBD0725621E6F006A8AAF /* InvestmentExpirationDateViewModel.swift in Sources */,
+				82BCBD0125621E6F006A8AAF /* AppCoordinator.swift in Sources */,
+				82BCBD1625621E6F006A8AAF /* InvesmentSimulationServiceFactory.swift in Sources */,
+				82BCBD0D25621E6F006A8AAF /* InvestmentSimulationDetailController.swift in Sources */,
+				82BCBD0B25621E6F006A8AAF /* InvestmentPerformanceViewModel.swift in Sources */,
+				82BCBD1D25621E6F006A8AAF /* BaseCoordinator.swift in Sources */,
+				82BCBD0C25621E6F006A8AAF /* SimulatorInputController.swift in Sources */,
+				82BCBD0E25621E6F006A8AAF /* InvestmentSimulationDetailView.swift in Sources */,
+				82BCBD1825621E6F006A8AAF /* DateFormatter+Extensions.swift in Sources */,
+				82BCBD1725621E6F006A8AAF /* InvesmentSimulationService.swift in Sources */,
+				82BCBD0A25621E6F006A8AAF /* SimulatorInputView.swift in Sources */,
+				82BCBD1125621E6F006A8AAF /* InvestmentSimulation.swift in Sources */,
+				82BCBD0825621E6F006A8AAF /* InvestmentAmountViewModel.swift in Sources */,
+				82BCBD1225621E6F006A8AAF /* SimulatorCoordinator.swift in Sources */,
+				82BCBD1B25621E6F006A8AAF /* DomainError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B367E62561FCDC004A272C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BCBD3425621E7A006A8AAF /* Data+ExtensionsSpecs.swift in Sources */,
+				82BCBD3C25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift in Sources */,
+				82BCBD3625621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift in Sources */,
+				82BCBD3225621E7A006A8AAF /* Date+ExtensionsSpecs.swift in Sources */,
+				82BCBD3A25621E7A006A8AAF /* InvestmentDetail+Mock.swift in Sources */,
+				82BCBD4025621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift in Sources */,
+				82BCBD3825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift in Sources */,
+				82BCBD3E25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82B367F02561FCDC004A272C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82A8B3EA2470CFB900FE50A8 /* InvestmentCalculator */;
+			targetProxy = 82B367EF2561FCDC004A272C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82BCBCD725621E6F006A8AAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82BCBCD825621E6F006A8AAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82A8B3FD2470CFBB00FE50A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82A8B3FE2470CFBB00FE50A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82A8B4002470CFBB00FE50A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CCB3E9108EB40EC1C40248 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THYVV6R2F8;
+				INFOPLIST_FILE = "$(SRCROOT)/InvestmentCalculator/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tfleme.InvestmentCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		82A8B4012470CFBB00FE50A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7F597F058E55BC5CDFD363 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THYVV6R2F8;
+				INFOPLIST_FILE = "$(SRCROOT)/InvestmentCalculator/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tfleme.InvestmentCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		82B367F22561FCDC004A272C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DDF8B24637A551C3CFC558 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7F34B75U;
+				INFOPLIST_FILE = InvestmentCalculatorTests/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tfleme.InvestmentCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestmentCalculator.app/InvestmentCalculator";
+			};
+			name = Debug;
+		};
+		82B367F32561FCDC004A272C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4A6F29D090DD2D453948ED /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PQ7F34B75U;
+				INFOPLIST_FILE = InvestmentCalculatorTests/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tfleme.InvestmentCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestmentCalculator.app/InvestmentCalculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82A8B3E62470CFB900FE50A8 /* Build configuration list for PBXProject "InvestmentCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A8B3FD2470CFBB00FE50A8 /* Debug */,
+				82A8B3FE2470CFBB00FE50A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82A8B3FF2470CFBB00FE50A8 /* Build configuration list for PBXNativeTarget "InvestmentCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A8B4002470CFBB00FE50A8 /* Debug */,
+				82A8B4012470CFBB00FE50A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B367F12561FCDC004A272C /* Build configuration list for PBXNativeTarget "InvestmentCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B367F22561FCDC004A272C /* Debug */,
+				82B367F32561FCDC004A272C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82A8B3E32470CFB900FE50A8 /* Project object */;
+}
