@@ -81,13 +81,13 @@ extension DetailView {
 
     private func setupTitleLabel() {
 
-        titleLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     }
 
     private func setupValueLabel() {
 
         valueLabel.setContentHuggingPriority(.required, for: .horizontal)
-        valueLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+        valueLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
     }
 }
 
