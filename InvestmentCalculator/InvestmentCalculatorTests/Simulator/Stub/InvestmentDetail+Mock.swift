@@ -13,7 +13,7 @@ extension InvestmentDetail {
                 yearlyInterestRate: 9.5512,
                 maturityTotalDays: 1981,
                 maturityBusinessDays: 1409,
-                maturityDate: Date(withString: "14/12/9999")!,
+                maturityDate: Date(withAppString: "14/12/9999")!,
                 rate: 123.0,
                 isTaxFree: false),
             grossAmount: 60528.20,

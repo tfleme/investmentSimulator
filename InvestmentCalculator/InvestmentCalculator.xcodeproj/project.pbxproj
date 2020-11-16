@@ -42,7 +42,7 @@
 		82BCBD1D25621E6F006A8AAF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCFE25621E6F006A8AAF /* BaseCoordinator.swift */; };
 		82BCBD1E25621E6F006A8AAF /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD0025621E6F006A8AAF /* DependencyContainer.swift */; };
 		82BCBD3225621E7A006A8AAF /* Date+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2425621E7A006A8AAF /* Date+ExtensionsSpecs.swift */; };
-		82BCBD3425621E7A006A8AAF /* Data+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2525621E7A006A8AAF /* Data+ExtensionsSpecs.swift */; };
+		82BCBD3425621E7A006A8AAF /* Data+CodableSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2525621E7A006A8AAF /* Data+CodableSpecs.swift */; };
 		82BCBD3625621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2725621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift */; };
 		82BCBD3825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift */; };
 		82BCBD3A25621E7A006A8AAF /* InvestmentDetail+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2A25621E7A006A8AAF /* InvestmentDetail+Mock.swift */; };
@@ -117,7 +117,7 @@
 		82BCBD0025621E6F006A8AAF /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		82BCBD2225621E7A006A8AAF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82BCBD2425621E7A006A8AAF /* Date+ExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
-		82BCBD2525621E7A006A8AAF /* Data+ExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
+		82BCBD2525621E7A006A8AAF /* Data+CodableSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CodableSpecs.swift"; sourceTree = "<group>"; };
 		82BCBD2725621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentSimulationDetailViewModelSpecs.swift; sourceTree = "<group>"; };
 		82BCBD2825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorInputViewModelSpecs.swift; sourceTree = "<group>"; };
 		82BCBD2A25621E7A006A8AAF /* InvestmentDetail+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InvestmentDetail+Mock.swift"; sourceTree = "<group>"; };
@@ -169,8 +169,8 @@
 		82A8B3E22470CFB900FE50A8 = {
 			isa = PBXGroup;
 			children = (
-				82BCBD2025621E7A006A8AAF /* InvestmentCalculatorTests */,
 				82BCBCCF25621E6F006A8AAF /* InvestmentCalculator */,
+				82BCBD2025621E7A006A8AAF /* InvestmentCalculatorTests */,
 				82A8B3EC2470CFB900FE50A8 /* Products */,
 				822BB4D1255C984700F28136 /* Frameworks */,
 				86610C3E02FE437290E256E4 /* Pods */,
@@ -389,7 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				82BCBD2425621E7A006A8AAF /* Date+ExtensionsSpecs.swift */,
-				82BCBD2525621E7A006A8AAF /* Data+ExtensionsSpecs.swift */,
+				82BCBD2525621E7A006A8AAF /* Data+CodableSpecs.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -698,7 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82BCBD3425621E7A006A8AAF /* Data+ExtensionsSpecs.swift in Sources */,
+				82BCBD3425621E7A006A8AAF /* Data+CodableSpecs.swift in Sources */,
 				82BCBD3C25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift in Sources */,
 				82BCBD3625621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift in Sources */,
 				82BCBD3225621E7A006A8AAF /* Date+ExtensionsSpecs.swift in Sources */,

@@ -75,7 +75,7 @@ internal enum L10n {
       internal static let title = L10n.tr("Localizable", "simulatorInput.navigationItem.title")
     }
     internal enum Performance {
-      /// 100%
+      /// 100%%
       internal static let placeholder = L10n.tr("Localizable", "simulatorInput.performance.placeholder")
       /// Qual o percentual do CDI do investimento? *
       internal static let title = L10n.tr("Localizable", "simulatorInput.performance.title")

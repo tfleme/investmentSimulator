@@ -2,7 +2,7 @@ import Foundation
 
 extension Date {
 
-    init?(withString string: String?) {
+    init?(withAppString string: String?) {
         guard
             let string = string,
             let date = DateFormatter.app.date(from: string)

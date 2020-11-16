@@ -12,7 +12,7 @@
 "simulatorInput.expirationDate.placeholder" = "dia/mês/ano";
 "simulatorInput.expirationDate.error" = "Data inválida.";
 "simulatorInput.performance.title" = "Qual o percentual do CDI do investimento? *";
-"simulatorInput.performance.placeholder" = "100%";
+"simulatorInput.performance.placeholder" = "100%%";
 
 // MARK: - Simulator detail
 

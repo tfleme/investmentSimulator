@@ -36,7 +36,7 @@ extension InvestmentExpirationDateViewModel {
         #warning("Tiago Leme: Add validation logic")
 
         text
-            .map { Date(withString: $0) }
+            .map { Date(withAppString: $0) }
             .bind(to: expirationDate)
             .disposed(by: disposeBag)
     }

@@ -9,7 +9,7 @@ extension InvestmentSimulationParameters {
     static func mock() -> InvestmentSimulationParameters {
         return InvestmentSimulationParameters(
             amount: 1000.0,
-            expirationDate: Date(withString: "14/12/9999")!,
+            expirationDate: Date(withAppString: "14/12/9999")!,
             performance: 123)!
     }
 }
