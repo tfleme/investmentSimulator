@@ -44,7 +44,9 @@ final class InvestmentSimulationDetailViewModel {
                 value: detail.investmentParameter.investedAmount.currencyString),
             DetailViewModel(title: Localizabe.grossAmount, value: detail.grossAmount.currencyString),
             DetailViewModel(title: Localizabe.grossProfit, value: detail.grossAmountProfit.currencyString),
-            DetailViewModel(title: Localizabe.taxesRate, value: detail.taxesRate.currencyString),
+            DetailViewModel(
+                title: Localizabe.taxesRate,
+                value: "\(detail.taxesAmount.currencyString) (\(detail.taxesRate.percentString))"),
             DetailViewModel(title: Localizabe.netAmount, value: detail.netAmount.currencyString)
         ])
         self.detailsViewModel = DetailListViewModel(detailViewModels: [

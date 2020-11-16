@@ -37,7 +37,7 @@ final class InvestmentSimulationDetailViewModelSpecs: QuickSpec {
                         expect(detailViewModels[2].title).to(equal("Valor do rendimento"))
                         expect(detailViewModels[2].value).to(equal("R$ 28.295,29"))
                         expect(detailViewModels[3].title).to(equal("IR sobre o investimento"))
-                        expect(detailViewModels[3].value).to(equal("R$ 4.244,29 (15%)"))
+                        expect(detailViewModels[3].value).to(equal("R$ 4.230,78 (15%)"))
                         expect(detailViewModels[4].title).to(equal("Valor líquido do investimento"))
                         expect(detailViewModels[4].value).to(equal("R$ 56.297,42"))
                     }
