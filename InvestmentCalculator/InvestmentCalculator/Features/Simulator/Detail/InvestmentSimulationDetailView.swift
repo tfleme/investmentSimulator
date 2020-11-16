@@ -20,6 +20,7 @@ final class InvestmentSimulationDetailView: UIView, ViewStackable {
     init() {
         super.init(frame: .zero)
         setupViewConfiguration()
+        setupAccessibilityLabels()
     }
 
     required init?(coder: NSCoder) {
@@ -96,5 +97,17 @@ extension InvestmentSimulationDetailView {
         stackView.axis = .vertical
         stackView.spacing = 40.0
         stackView.distribution = .equalSpacing
+    }
+}
+
+// MARK: - Private methods - Accessibility
+
+extension InvestmentSimulationDetailView {
+
+    private func setupAccessibilityLabels() {
+
+        accessibilityLabel = "InvestmentSimulationDetailView"
+        button.accessibilityLabel = "InvestmentSimulationDetailView.actionButton"
+        button.isAccessibilityElement = true
     }
 }

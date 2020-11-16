@@ -15,6 +15,7 @@ open class InputViewModel {
     public let errorText: String?
     public let keyboardType: UIKeyboardType
     public let mask: String?
+    public let accessibilityLabel: String?
 
     public let isInputValid = BehaviorRelay<Bool>(value: true)
 
@@ -24,13 +25,15 @@ open class InputViewModel {
                 placeholder: String? = nil,
                 errorText: String? = nil,
                 keyboardType: UIKeyboardType = .default,
-                mask: String? = nil) {
+                mask: String? = nil,
+                accessibilityLabel: String? = nil) {
 
         self.title = title
         self.placeholder = placeholder
         self.errorText = errorText
         self.keyboardType = keyboardType
         self.mask = mask
+        self.accessibilityLabel = accessibilityLabel
     }
 }
 

@@ -42,6 +42,8 @@ extension InputView {
         textfield.placeholder = viewModel.placeholder
         textfield.keyboardType = viewModel.keyboardType
         textfield.delegate = viewModel.mask != nil ? self : nil
+        
+        accessibilityLabel = viewModel.accessibilityLabel
 
         setupObservables(with: viewModel)
         self.viewModel = viewModel

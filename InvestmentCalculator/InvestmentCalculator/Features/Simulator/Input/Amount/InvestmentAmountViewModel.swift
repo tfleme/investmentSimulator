@@ -18,7 +18,8 @@ final class InvestmentAmountViewModel: CurrencyInputViewModel {
     init() {
 
         super.init(title: L10n.SimulatorInput.Amount.title,
-                   placeholder: L10n.SimulatorInput.Amount.placeholder)
+                   placeholder: L10n.SimulatorInput.Amount.placeholder,
+                   accessibilityLabel: "InvestmentAmountView")
 
         setupObservables()
     }

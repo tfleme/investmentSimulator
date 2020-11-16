@@ -25,6 +25,7 @@ final class SimulatorInputView: UIView, ViewStackable, KeyboardAdjustable {
         super.init(frame: .zero)
         setupViewConfiguration()
         setupKeyboardNotifications()
+        setupAccessibilityLabels()
     }
 
     required init?(coder: NSCoder) {
@@ -101,5 +102,17 @@ extension SimulatorInputView {
         stackView.axis = .vertical
         stackView.spacing = 40.0
         stackView.distribution = .equalSpacing
+    }
+}
+
+// MARK: - Private methods - Accessibility
+
+extension SimulatorInputView {
+
+    private func setupAccessibilityLabels() {
+
+        accessibilityLabel = "SimulatorInputView"
+        button.accessibilityLabel = "SimulatorInputView.actionButton"
+        button.isAccessibilityElement = true
     }
 }

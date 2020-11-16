@@ -21,7 +21,8 @@ final class InvestmentExpirationDateViewModel: InputViewModel {
                    placeholder: L10n.SimulatorInput.ExpirationDate.placeholder,
                    errorText: L10n.SimulatorInput.ExpirationDate.error,
                    keyboardType: .numberPad,
-                   mask: L10n.Default.dayMonthYearMask)
+                   mask: L10n.Default.dayMonthYearMask,
+                   accessibilityLabel: "InvestmentExpirationDateView")
 
         setupObservables()
     }

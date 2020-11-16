@@ -18,7 +18,8 @@ final class InvestmentPerformanceViewModel: PercentageInputViewModel {
     init() {
 
         super.init(title: L10n.SimulatorInput.Performance.title,
-                   placeholder: L10n.SimulatorInput.Performance.placeholder)
+                   placeholder: L10n.SimulatorInput.Performance.placeholder,
+                   accessibilityLabel: "InvestmentPerformanceView")
 
         setupObservables()
     }

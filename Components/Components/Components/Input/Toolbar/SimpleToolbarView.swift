@@ -27,6 +27,7 @@ final class SimpleToolbarView: UIToolbar {
         super.init(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: 44.0))
 
         setupUI()
+        setupAccessibilityLabels()
     }
 
     required init?(coder: NSCoder) {
@@ -74,5 +75,18 @@ extension SimpleToolbarView {
     @objc
     private func doneButtonTapped() {
         doneButtonTap.accept(())
+    }
+}
+
+// MARK: - Private methods - Accessibility
+
+extension SimpleToolbarView {
+    
+    private func setupAccessibilityLabels() {
+        
+        cancelButton.accessibilityLabel = "SimpleToolbarView.cancelButton"
+        cancelButton.isAccessibilityElement = true
+        doneButton.accessibilityLabel = "SimpleToolbarView.doneButton"
+        doneButton.isAccessibilityElement = true
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A6E042BD3AC09A663E4D1CA /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DF1CD13DEF5867FEA09BBB /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework */; };
 		821B0E8125623DEB004C0F0A /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B0E8025623DEB004C0F0A /* L10n.swift */; };
+		823A762B2562E81C004951CA /* SimulatorCoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A762A2562E81C004951CA /* SimulatorCoordinatorUITests.swift */; };
+		823A76312562E877004951CA /* DependencyContainerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A76302562E877004951CA /* DependencyContainerStub.swift */; };
 		823C02B825622F53000A5A55 /* NetworkPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C02B725622F53000A5A55 /* NetworkPackage.framework */; };
 		823C02B925622F53000A5A55 /* NetworkPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 823C02B725622F53000A5A55 /* NetworkPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82818C8425622BA300D69D05 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82818C8325622BA300D69D05 /* Components.framework */; };
@@ -83,6 +85,8 @@
 		5D4A6F29D090DD2D453948ED /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		821B0D9F2562326D004C0F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821B0E8025623DEB004C0F0A /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		823A762A2562E81C004951CA /* SimulatorCoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorCoordinatorUITests.swift; sourceTree = "<group>"; };
+		823A76302562E877004951CA /* DependencyContainerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainerStub.swift; sourceTree = "<group>"; };
 		823C02B725622F53000A5A55 /* NetworkPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82818C8325622BA300D69D05 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestmentCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +170,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		823A76292562E7E3004951CA /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				823A762F2562E855004951CA /* Stub */,
+				823A762A2562E81C004951CA /* SimulatorCoordinatorUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		823A762F2562E855004951CA /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				823A76302562E877004951CA /* DependencyContainerStub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
 		82A8B3E22470CFB900FE50A8 = {
 			isa = PBXGroup;
 			children = (
@@ -237,10 +258,10 @@
 		82BCBCDB25621E6F006A8AAF /* Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				82BCBCED25621E6F006A8AAF /* SimulatorCoordinator.swift */,
 				82BCBCDC25621E6F006A8AAF /* Input */,
 				82BCBCE625621E6F006A8AAF /* Detail */,
 				82BCBCEA25621E6F006A8AAF /* Model */,
-				82BCBCED25621E6F006A8AAF /* SimulatorCoordinator.swift */,
 				82BCBCEE25621E6F006A8AAF /* UseCases */,
 				82BCBCF225621E6F006A8AAF /* Services */,
 			);
@@ -372,6 +393,7 @@
 			children = (
 				82BCBD2125621E7A006A8AAF /* Resources */,
 				82BCBD2325621E7A006A8AAF /* Extensions */,
+				823A76292562E7E3004951CA /* UITests */,
 				82BCBD2625621E7A006A8AAF /* Simulator */,
 			);
 			path = InvestmentCalculatorTests;
@@ -703,6 +725,8 @@
 				82BCBD3625621E7A006A8AAF /* InvestmentSimulationDetailViewModelSpecs.swift in Sources */,
 				82BCBD3225621E7A006A8AAF /* Date+ExtensionsSpecs.swift in Sources */,
 				82BCBD3A25621E7A006A8AAF /* InvestmentDetail+Mock.swift in Sources */,
+				823A762B2562E81C004951CA /* SimulatorCoordinatorUITests.swift in Sources */,
+				823A76312562E877004951CA /* DependencyContainerStub.swift in Sources */,
 				82BCBD4025621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift in Sources */,
 				82BCBD3825621E7A006A8AAF /* SimulatorInputViewModelSpecs.swift in Sources */,
 				82BCBD3E25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift in Sources */,

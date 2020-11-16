@@ -10,13 +10,15 @@ open class CurrencyInputViewModel: InputViewModel {
 
     public init(title: String? = nil,
                 placeholder: String? = nil,
-                errorText: String? = nil) {
+                errorText: String? = nil,
+                accessibilityLabel: String? = nil) {
 
         super.init(title: title,
                    placeholder: placeholder,
                    errorText: errorText,
                    keyboardType: .numberPad,
-                   mask: "R$")
+                   mask: "R$",
+                   accessibilityLabel: accessibilityLabel)
     }
 }
 
