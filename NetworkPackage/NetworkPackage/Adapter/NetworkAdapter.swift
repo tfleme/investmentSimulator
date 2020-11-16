@@ -13,7 +13,6 @@ public final class NetworkAdapter {
 
     // MARK: - Private methods
 
-    #warning("Tiago Leme: timeout logic needs to be implemented.")
     private let timeoutInterval: TimeInterval
     private let urlSession: URLSession
 
@@ -35,7 +34,7 @@ extension NetworkAdapter: NetworkAdapterType {
         urlSession.dataTask(with: urlRequest(request)) { [weak self] result in
 
             switch result {
-            case .success(let response, let data):
+            case .success((let response, let data)):
                 guard let statusCode = (response as? HTTPURLResponse)?.statusCode, 200..<299 ~= statusCode else {
                     self?.debugResponse(data)
                     completion(.failure(NetworkError.invalidResponse))
@@ -63,7 +62,7 @@ extension NetworkAdapter: ReactiveNetworkAdapterType {
             let task = self.urlSession.dataTask(with: self.urlRequest(request)) { [weak self] result in
 
                 switch result {
-                case .success(let response, let data):
+                case .success((let response, let data)):
                     guard let statusCode = (response as? HTTPURLResponse)?.statusCode, 200..<299 ~= statusCode else {
                         self?.debugResponse(data)
                         observer.onError(NetworkError.invalidResponse)

@@ -8,7 +8,7 @@
       location = "group:Components/Components.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Network">
+      location = "group:NetworkPackage/NetworkPackage.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

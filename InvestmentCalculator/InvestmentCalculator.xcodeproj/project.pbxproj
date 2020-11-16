@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		165B77D4C786B8EAEA845566 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7434FF08C1B4723932944A6F /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a */; };
-		82818B5B256223D200D69D05 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82818B5A256223D200D69D05 /* Components.framework */; };
+		3A6E042BD3AC09A663E4D1CA /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DF1CD13DEF5867FEA09BBB /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework */; };
+		823C02B825622F53000A5A55 /* NetworkPackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C02B725622F53000A5A55 /* NetworkPackage.framework */; };
+		823C02B925622F53000A5A55 /* NetworkPackage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 823C02B725622F53000A5A55 /* NetworkPackage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		82818C8425622BA300D69D05 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82818C8325622BA300D69D05 /* Components.framework */; };
+		82818C8525622BA300D69D05 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82818C8325622BA300D69D05 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		82BCBD0125621E6F006A8AAF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCD125621E6F006A8AAF /* AppCoordinator.swift */; };
 		82BCBD0225621E6F006A8AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBCD225621E6F006A8AAF /* AppDelegate.swift */; };
 		82BCBD0325621E6F006A8AAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82BCBCD525621E6F006A8AAF /* Localizable.strings */; };
@@ -45,7 +48,7 @@
 		82BCBD3C25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2B25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift */; };
 		82BCBD3E25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2D25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift */; };
 		82BCBD4025621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBD2E25621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift */; };
-		92E97A91A995728C149C5911 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAD28DBE83BA2305D07CA27 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a */; };
+		DDBF843E3D1C652443FE2C6C /* Pods_InvestmentCalculatorTargets_InvestmentCalculator_InvestmentCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D223A0F04C99370DD66DDC /* Pods_InvestmentCalculatorTargets_InvestmentCalculator_InvestmentCalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,15 +61,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		82818C8625622BA300D69D05 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				823C02B925622F53000A5A55 /* NetworkPackage.framework in Embed Frameworks */,
+				82818C8525622BA300D69D05 /* Components.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		51CCB3E9108EB40EC1C40248 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator/Pods-InvestmentCalculatorTargets-InvestmentCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		5330DDCA8139F0AD97846F89 /* Pods-InvestmentCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		5D4A6F29D090DD2D453948ED /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		7434FF08C1B4723932944A6F /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestmentCalculatorTargets-InvestmentCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		82818B5A256223D200D69D05 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		821B0D9F2562326D004C0F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823C02B725622F53000A5A55 /* NetworkPackage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkPackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82818C8325622BA300D69D05 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestmentCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B367EA2561FCDC004A272C /* InvestmentCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestmentCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82BCBCC925621D50006A8AAF /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCBCD125621E6F006A8AAF /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		82BCBCD225621E6F006A8AAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82BCBCD525621E6F006A8AAF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -104,8 +122,9 @@
 		82BCBD2B25621E7A006A8AAF /* InvestmentSimulationParameters+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InvestmentSimulationParameters+Mock.swift"; sourceTree = "<group>"; };
 		82BCBD2D25621E7A006A8AAF /* InvesmentSimulationUseCasesSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationUseCasesSpecs.swift; sourceTree = "<group>"; };
 		82BCBD2E25621E7A006A8AAF /* InvesmentSimulationServiceSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvesmentSimulationServiceSpecs.swift; sourceTree = "<group>"; };
+		92D223A0F04C99370DD66DDC /* Pods_InvestmentCalculatorTargets_InvestmentCalculator_InvestmentCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculatorTargets_InvestmentCalculator_InvestmentCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D18372E5DC25068D78212F /* Pods-InvestmentCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator/Pods-InvestmentCalculator.release.xcconfig"; sourceTree = "<group>"; };
-		9AAD28DBE83BA2305D07CA27 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DF1CD13DEF5867FEA09BBB /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28D826C11901F76DA31B745 /* Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B84AC9CAD4218B465CA4FF /* Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculator-InvestmentCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3DDF8B24637A551C3CFC558 /* Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,8 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82818B5B256223D200D69D05 /* Components.framework in Frameworks */,
-				165B77D4C786B8EAEA845566 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a in Frameworks */,
+				82818C8425622BA300D69D05 /* Components.framework in Frameworks */,
+				823C02B825622F53000A5A55 /* NetworkPackage.framework in Frameworks */,
+				3A6E042BD3AC09A663E4D1CA /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E97A91A995728C149C5911 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a in Frameworks */,
+				DDBF843E3D1C652443FE2C6C /* Pods_InvestmentCalculatorTargets_InvestmentCalculator_InvestmentCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,10 +156,10 @@
 		822BB4D1255C984700F28136 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82818B5A256223D200D69D05 /* Components.framework */,
-				82BCBCC925621D50006A8AAF /* Components.framework */,
-				7434FF08C1B4723932944A6F /* libPods-InvestmentCalculatorTargets-InvestmentCalculator.a */,
-				9AAD28DBE83BA2305D07CA27 /* libPods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests.a */,
+				823C02B725622F53000A5A55 /* NetworkPackage.framework */,
+				82818C8325622BA300D69D05 /* Components.framework */,
+				B7DF1CD13DEF5867FEA09BBB /* Pods_InvestmentCalculatorTargets_InvestmentCalculator.framework */,
+				92D223A0F04C99370DD66DDC /* Pods_InvestmentCalculatorTargets_InvestmentCalculator_InvestmentCalculatorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +210,7 @@
 				82BCBCD425621E6F006A8AAF /* Strings */,
 				82BCBCD625621E6F006A8AAF /* Assets.xcassets */,
 				82BCBCD725621E6F006A8AAF /* LaunchScreen.storyboard */,
+				821B0D9F2562326D004C0F0A /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -427,14 +448,14 @@
 				82A8B3E82470CFB900FE50A8 /* Frameworks */,
 				82A8B3E92470CFB900FE50A8 /* Resources */,
 				829D75472561F72E006090FB /* Swift lint */,
+				82818C8625622BA300D69D05 /* Embed Frameworks */,
+				09586A6C5C451507612B88DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = InvestmentCalculator;
-			packageProductDependencies = (
-			);
 			productName = Groceries;
 			productReference = 82A8B3EB2470CFB900FE50A8 /* InvestmentCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -447,6 +468,7 @@
 				82B367E62561FCDC004A272C /* Sources */,
 				82B367E72561FCDC004A272C /* Frameworks */,
 				82B367E82561FCDC004A272C /* Resources */,
+				F8382523775E050DFFB3215B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -518,6 +540,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09586A6C5C451507612B88DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator/Pods-InvestmentCalculatorTargets-InvestmentCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator/Pods-InvestmentCalculatorTargets-InvestmentCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator/Pods-InvestmentCalculatorTargets-InvestmentCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B7E907FA3789B65D89470AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,6 +617,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8382523775E050DFFB3215B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests/Pods-InvestmentCalculatorTargets-InvestmentCalculator-InvestmentCalculatorTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -774,9 +830,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = THYVV6R2F8;
 				INFOPLIST_FILE = "$(SRCROOT)/InvestmentCalculator/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -794,9 +851,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = THYVV6R2F8;
 				INFOPLIST_FILE = "$(SRCROOT)/InvestmentCalculator/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

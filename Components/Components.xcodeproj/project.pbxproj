@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09C4F9E6817B06EDC3979188 /* libPods-InvestmentCalculatorTargets-Components-ComponentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDDBA827BFDB19DB701AB1F /* libPods-InvestmentCalculatorTargets-Components-ComponentsTests.a */; };
+		35938C362719471A6AC28D9C /* Pods_InvestmentCalculatorTargets_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA881CB1CAA631E8E83FBBE /* Pods_InvestmentCalculatorTargets_Components.framework */; };
+		5AF7C493E3EF0FC199C68DF4 /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0765928F75BE8CFF06E33AA /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework */; };
 		82BCBC0025621862006A8AAF /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BCBBF625621862006A8AAF /* Components.framework */; };
 		82BCBC452562190E006A8AAF /* KeyboardAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC1C2562190E006A8AAF /* KeyboardAdjustable.swift */; };
 		82BCBC462562190E006A8AAF /* ViewModelOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC1D2562190E006A8AAF /* ViewModelOutputType.swift */; };
@@ -37,7 +38,6 @@
 		82BCBC5E2562190E006A8AAF /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC412562190E006A8AAF /* Decimal+Extensions.swift */; };
 		82BCBC5F2562190E006A8AAF /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC422562190E006A8AAF /* Collection+Extensions.swift */; };
 		82BCBC6B25621977006A8AAF /* String+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC6A25621977006A8AAF /* String+ExtensionsSpecs.swift */; };
-		E828D62D772B2C28FDA6BBA9 /* libPods-InvestmentCalculatorTargets-Components.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE573F3784109B9B65365A4 /* libPods-InvestmentCalculatorTargets-Components.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +52,12 @@
 
 /* Begin PBXFileReference section */
 		0A25D53B9BD984339AE72BDB /* Pods-InvestmentCalculatorTargets-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-Components.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-Components/Pods-InvestmentCalculatorTargets-Components.release.xcconfig"; sourceTree = "<group>"; };
-		0BDDBA827BFDB19DB701AB1F /* libPods-InvestmentCalculatorTargets-Components-ComponentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestmentCalculatorTargets-Components-ComponentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEFDCE0BFFAA8CDA3B33A64 /* Pods-Components-ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components-ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-Components-ComponentsTests/Pods-Components-ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C41F198877C7EBCEDC33EEA /* Pods-InvestmentCalculatorTargets-Components-ComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-Components-ComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-Components-ComponentsTests/Pods-InvestmentCalculatorTargets-Components-ComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		6276A3B3BB0D177F7ACE712B /* Pods-Components-ComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components-ComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-Components-ComponentsTests/Pods-Components-ComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D8C921AEA5C290F34401173 /* Pods-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.release.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.release.xcconfig"; sourceTree = "<group>"; };
 		77321245884E4F917F3CA475 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.debug.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
-		7EE573F3784109B9B65365A4 /* libPods-InvestmentCalculatorTargets-Components.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestmentCalculatorTargets-Components.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA881CB1CAA631E8E83FBBE /* Pods_InvestmentCalculatorTargets_Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculatorTargets_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCBBF625621862006A8AAF /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCBBFF25621862006A8AAF /* ComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCBC1C2562190E006A8AAF /* KeyboardAdjustable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustable.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		82BCBC6A25621977006A8AAF /* String+ExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
 		A06EB11ACA7AF25F593B7E4D /* Pods-InvestmentCalculatorTargets-Components-ComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-Components-ComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-Components-ComponentsTests/Pods-InvestmentCalculatorTargets-Components-ComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACAB26EEE6635DDF26EA8A2E /* Pods-InvestmentCalculatorTargets-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-Components.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-Components/Pods-InvestmentCalculatorTargets-Components.debug.xcconfig"; sourceTree = "<group>"; };
+		E0765928F75BE8CFF06E33AA /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E828D62D772B2C28FDA6BBA9 /* libPods-InvestmentCalculatorTargets-Components.a in Frameworks */,
+				35938C362719471A6AC28D9C /* Pods_InvestmentCalculatorTargets_Components.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82BCBC0025621862006A8AAF /* Components.framework in Frameworks */,
-				09C4F9E6817B06EDC3979188 /* libPods-InvestmentCalculatorTargets-Components-ComponentsTests.a in Frameworks */,
+				5AF7C493E3EF0FC199C68DF4 /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +315,8 @@
 		B27FEF7D6C73D38C30E9F377 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EE573F3784109B9B65365A4 /* libPods-InvestmentCalculatorTargets-Components.a */,
-				0BDDBA827BFDB19DB701AB1F /* libPods-InvestmentCalculatorTargets-Components-ComponentsTests.a */,
+				7DA881CB1CAA631E8E83FBBE /* Pods_InvestmentCalculatorTargets_Components.framework */,
+				E0765928F75BE8CFF06E33AA /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,6 +361,7 @@
 				82BCBBFB25621862006A8AAF /* Sources */,
 				82BCBBFC25621862006A8AAF /* Frameworks */,
 				82BCBBFD25621862006A8AAF /* Resources */,
+				DA356E15DEC4AAD9ACC8D903 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +469,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA356E15DEC4AAD9ACC8D903 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-Components-ComponentsTests/Pods-InvestmentCalculatorTargets-Components-ComponentsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-Components-ComponentsTests/Pods-InvestmentCalculatorTargets-Components-ComponentsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvestmentCalculatorTargets-Components-ComponentsTests/Pods-InvestmentCalculatorTargets-Components-ComponentsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

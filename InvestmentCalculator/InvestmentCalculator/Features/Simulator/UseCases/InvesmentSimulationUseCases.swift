@@ -9,19 +9,18 @@ final class InvesmentSimulationUseCases: InvesmentSimulationUseCasesType {
 
     // MARK: - Private properties
 
-//    private let service: InvesmentSimulationServiceType
-//
-//    // MARK: - Initializers
-//
-//    init(service: InvesmentSimulationServiceType) {
-//
-//        self.service = service
-//    }
+    private let service: InvesmentSimulationServiceType
+
+    // MARK: - Initializers
+
+    init(service: InvesmentSimulationServiceType) {
+
+        self.service = service
+    }
 
     // MARK: - Public methods
 
     func simulate(with parameters: InvestmentSimulationParameters) -> Observable<InvestmentDetail> {
-//        return service.simulate(with: parameters)
-        return .error(DomainError.generic)
+        return service.simulate(with: parameters)
     }
 }

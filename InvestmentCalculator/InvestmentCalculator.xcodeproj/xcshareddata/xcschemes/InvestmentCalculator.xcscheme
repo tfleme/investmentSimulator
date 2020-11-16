@@ -37,6 +37,20 @@
             BlueprintName = "InvestmentCalculator"
             ReferencedContainer = "container:InvestmentCalculator.xcodeproj">
          </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "82BCBBF525621862006A8AAF"
+            BuildableName = "Components.framework"
+            BlueprintName = "Components"
+            ReferencedContainer = "container:../Components/Components.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "82818C092562287C00D69D05"
+            BuildableName = "NetworkPackage.framework"
+            BlueprintName = "NetworkPackage"
+            ReferencedContainer = "container:../NetworkPackage/NetworkPackage.xcodeproj">
+         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
@@ -47,6 +61,16 @@
                BuildableName = "InvestmentCalculatorTests.xctest"
                BlueprintName = "InvestmentCalculatorTests"
                ReferencedContainer = "container:InvestmentCalculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "82BCBBFE25621862006A8AAF"
+               BuildableName = "ComponentsTests.xctest"
+               BlueprintName = "ComponentsTests"
+               ReferencedContainer = "container:../Components/Components.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

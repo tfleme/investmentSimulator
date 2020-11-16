@@ -31,7 +31,7 @@ extension InvestmentPerformanceViewModel {
     private func setupObservables() {
 
         text
-            .map { $0?.replacingOccurrences(of: "%", with: "") }
+            .compactMap { $0?.replacingOccurrences(of: "%", with: "") }
             .map(Int.init)
             .bind(to: performance)
             .disposed(by: disposeBag)

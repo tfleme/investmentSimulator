@@ -2,7 +2,7 @@ import Foundation
 import Quick
 import Nimble
 import RxSwift
-import Network
+import NetworkPackage
 
 @testable import InvestmentCalculator
 
