@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		35938C362719471A6AC28D9C /* Pods_InvestmentCalculatorTargets_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA881CB1CAA631E8E83FBBE /* Pods_InvestmentCalculatorTargets_Components.framework */; };
 		5AF7C493E3EF0FC199C68DF4 /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0765928F75BE8CFF06E33AA /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework */; };
+		823A760F2562E0F4004951CA /* Decimal+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A760E2562E0F4004951CA /* Decimal+ExtensionsSpecs.swift */; };
+		823A76142562E298004951CA /* NotificationName+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A76132562E298004951CA /* NotificationName+ExtensionsSpecs.swift */; };
+		823A761C2562E3BF004951CA /* InputViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A761B2562E3BF004951CA /* InputViewModelSpecs.swift */; };
+		823A76222562E5D2004951CA /* PercentageInputViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A76212562E5D2004951CA /* PercentageInputViewModelSpecs.swift */; };
+		823A76262562E5EB004951CA /* CurrencyInputViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A76252562E5EB004951CA /* CurrencyInputViewModelSpecs.swift */; };
 		82BCBC0025621862006A8AAF /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BCBBF625621862006A8AAF /* Components.framework */; };
 		82BCBC452562190E006A8AAF /* KeyboardAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC1C2562190E006A8AAF /* KeyboardAdjustable.swift */; };
 		82BCBC462562190E006A8AAF /* ViewModelOutputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC1D2562190E006A8AAF /* ViewModelOutputType.swift */; };
@@ -58,6 +63,11 @@
 		6D8C921AEA5C290F34401173 /* Pods-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.release.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.release.xcconfig"; sourceTree = "<group>"; };
 		77321245884E4F917F3CA475 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Components.debug.xcconfig"; path = "Target Support Files/Pods-Components/Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
 		7DA881CB1CAA631E8E83FBBE /* Pods_InvestmentCalculatorTargets_Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculatorTargets_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		823A760E2562E0F4004951CA /* Decimal+ExtensionsSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
+		823A76132562E298004951CA /* NotificationName+ExtensionsSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
+		823A761B2562E3BF004951CA /* InputViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModelSpecs.swift; sourceTree = "<group>"; };
+		823A76212562E5D2004951CA /* PercentageInputViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageInputViewModelSpecs.swift; sourceTree = "<group>"; };
+		823A76252562E5EB004951CA /* CurrencyInputViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInputViewModelSpecs.swift; sourceTree = "<group>"; };
 		82BCBBF625621862006A8AAF /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCBBFF25621862006A8AAF /* ComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BCBC1C2562190E006A8AAF /* KeyboardAdjustable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustable.swift; sourceTree = "<group>"; };
@@ -114,6 +124,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823A76192562E37C004951CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				823A761A2562E384004951CA /* Input */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		823A761A2562E384004951CA /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				823A761B2562E3BF004951CA /* InputViewModelSpecs.swift */,
+				823A76212562E5D2004951CA /* PercentageInputViewModelSpecs.swift */,
+				823A76252562E5EB004951CA /* CurrencyInputViewModelSpecs.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
 		82BCBBEC25621861006A8AAF = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +176,7 @@
 		82BCBC0325621862006A8AAF /* ComponentsTests */ = {
 			isa = PBXGroup;
 			children = (
+				823A76192562E37C004951CA /* Components */,
 				82BCBC6925621977006A8AAF /* Extensions */,
 			);
 			path = ComponentsTests;
@@ -195,11 +224,11 @@
 		82BCBC232562190E006A8AAF /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				82BCBC242562190E006A8AAF /* InputViewModel.swift */,
 				82BCBC252562190E006A8AAF /* Toolbar */,
 				82BCBC272562190E006A8AAF /* Currency */,
 				82BCBC292562190E006A8AAF /* Percentage */,
 				82BCBC2B2562190E006A8AAF /* InputView.swift */,
+				82BCBC242562190E006A8AAF /* InputViewModel.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -239,8 +268,8 @@
 		82BCBC2E2562190E006A8AAF /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				82BCBC2F2562190E006A8AAF /* DetailListView.swift */,
 				82BCBC302562190E006A8AAF /* Detail */,
+				82BCBC2F2562190E006A8AAF /* DetailListView.swift */,
 				82BCBC332562190E006A8AAF /* DetailListViewModel.swift */,
 			);
 			path = Details;
@@ -292,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				82BCBC6A25621977006A8AAF /* String+ExtensionsSpecs.swift */,
+				823A760E2562E0F4004951CA /* Decimal+ExtensionsSpecs.swift */,
+				823A76132562E298004951CA /* NotificationName+ExtensionsSpecs.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -529,7 +560,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823A760F2562E0F4004951CA /* Decimal+ExtensionsSpecs.swift in Sources */,
 				82BCBC6B25621977006A8AAF /* String+ExtensionsSpecs.swift in Sources */,
+				823A76222562E5D2004951CA /* PercentageInputViewModelSpecs.swift in Sources */,
+				823A761C2562E3BF004951CA /* InputViewModelSpecs.swift in Sources */,
+				823A76142562E298004951CA /* NotificationName+ExtensionsSpecs.swift in Sources */,
+				823A76262562E5EB004951CA /* CurrencyInputViewModelSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

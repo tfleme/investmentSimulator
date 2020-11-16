@@ -30,8 +30,6 @@ extension String {
     }
 
     var currencyString: String {
-        guard let currencyString = NumberFormatter.currency.string(from: self.number) else { return self }
-
-        return currencyString
+        return NumberFormatter.currency.string(from: self.number)!
     }
 }
