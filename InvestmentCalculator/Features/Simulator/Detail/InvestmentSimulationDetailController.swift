@@ -2,13 +2,13 @@ import UIKit
 import RxSwift
 
 final class InvestmentSimulationDetailController: BaseViewController {
-    
+
     // MARK: - Private properties
-    
+
     private let disposeBag = DisposeBag()
     private let customView = InvestmentSimulationDetailView()
     private let viewModel: InvestmentSimulationDetailViewModel
-    
+
     // MARK: - Initializers
 
     init(viewModel: InvestmentSimulationDetailViewModel) {
@@ -29,7 +29,7 @@ final class InvestmentSimulationDetailController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupUI()
         setupObservables()
     }
@@ -38,19 +38,19 @@ final class InvestmentSimulationDetailController: BaseViewController {
 // MARK: - Private methods - Setup
 
 extension InvestmentSimulationDetailController {
-    
+
     private func setupUI() {
-        
+
         navigationItem.title = "Investimento"
-        
+
         customView.addStackableView(with: viewModel.summaryViewModel)
         customView.addStackableView(with: viewModel.parametersViewModel)
         customView.addStackableView(with: viewModel.detailsViewModel)
         customView.button.setTitle(viewModel.buttonTitle, for: .normal)
     }
-    
+
     private func setupObservables() {
-        
+
         customView.button.rx.tap
             .bind(to: viewModel.buttonTap)
             .disposed(by: disposeBag)

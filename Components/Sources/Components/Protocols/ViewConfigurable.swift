@@ -1,7 +1,7 @@
 import Foundation
 
 public protocol ViewConfigurable {
-    
+
     func setupViewConfiguration()
     func buildViewHierarchy()
     func setupConstraints()
@@ -11,7 +11,7 @@ public protocol ViewConfigurable {
 // MARK: - Default implementation
 
 extension ViewConfigurable {
-    
+
     public func setupViewConfiguration() {
         buildViewHierarchy()
         setupConstraints()

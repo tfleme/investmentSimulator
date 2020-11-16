@@ -5,7 +5,7 @@ protocol InvesmentSimulationUseCasesFactory {
 }
 
 extension DependencyContainer: InvesmentSimulationUseCasesFactory {
-    
+
     func makeInvesmentSimulationUseCases() -> InvesmentSimulationUseCasesType {
         return InvesmentSimulationUseCases(service: makeInvesmentSimulationService())
     }

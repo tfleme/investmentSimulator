@@ -6,7 +6,7 @@ protocol InvesmentSimulationServiceFactory {
 }
 
 extension DependencyContainer: InvesmentSimulationServiceFactory {
-    
+
     func makeInvesmentSimulationService() -> InvesmentSimulationServiceType {
         return InvesmentSimulationService(network: NetworkAdapter())
     }

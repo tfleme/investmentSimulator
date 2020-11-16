@@ -1,29 +1,29 @@
 import UIKit
 
 final class SimulatorCoordinator: BaseCoordinator {
-    
+
     typealias Factory = InvesmentSimulationUseCasesFactory
-    
+
     // MARK: - Private properties
-    
+
     private let navigationController: UINavigationController
     private let factory: Factory
-    
+
     // MARK: - Initializers
-    
+
     init(navigationController: UINavigationController, factory: Factory) {
-        
+
         self.navigationController = navigationController
         self.factory = factory
     }
-    
+
     // MARK: - Public methods
-    
+
     override func start() {
-        
+
         let viewModel = SimulatorInputViewModel(delegate: self, useCases: factory.makeInvesmentSimulationUseCases())
         let viewController = SimulatorInputController(viewModel: viewModel)
-        
+
         rootViewController = viewController
         navigationController.pushViewController(viewController, animated: true)
     }
@@ -32,12 +32,12 @@ final class SimulatorCoordinator: BaseCoordinator {
 // MARK: - SimulatorInputViewModelDelegate
 
 extension SimulatorCoordinator: SimulatorInputViewModelDelegate {
-    
+
     func didSimulate(with detail: InvestmentDetail) {
-        
+
         let viewModel = InvestmentSimulationDetailViewModel(delegate: self, detail: detail)
         let viewController = InvestmentSimulationDetailController(viewModel: viewModel)
-        
+
         rootViewController = viewController
         navigationController.pushViewController(viewController, animated: true)
     }
@@ -46,9 +46,9 @@ extension SimulatorCoordinator: SimulatorInputViewModelDelegate {
 // MARK: - SimulatorInputViewModelDelegate
 
 extension SimulatorCoordinator: InvestmentSimulationDetailViewModelDelegate {
-    
+
     func didSelectSimulate() {
-        
+
         navigationController.popViewController(animated: true)
     }
 }

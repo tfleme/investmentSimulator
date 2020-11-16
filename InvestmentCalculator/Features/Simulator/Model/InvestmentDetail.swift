@@ -1,7 +1,7 @@
 import Foundation
 
 struct InvestmentDetail: Codable {
-    
+
     let investmentParameter: InvestmentParameter
     let grossAmount: Decimal
     let taxesAmount: Decimal
@@ -19,9 +19,9 @@ struct InvestmentDetail: Codable {
 // MARK: - InvestmentDetail inner type - InvestmentParameter
 
 extension InvestmentDetail {
-    
+
     struct InvestmentParameter: Codable {
-        
+
         let investedAmount: Decimal
         let yearlyInterestRate: Decimal
         let maturityTotalDays: Int

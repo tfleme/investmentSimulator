@@ -8,29 +8,29 @@ protocol InvestmentSimulationDetailViewModelDelegate: class {
 }
 
 final class InvestmentSimulationDetailViewModel {
-    
+
     // MARK: - Private properties
-    
+
     private let disposeBag = DisposeBag()
-    
+
     private weak var delegate: InvestmentSimulationDetailViewModelDelegate?
-    
+
     // MARK: - Public properties - Input
-    
+
     let buttonTap = PublishRelay<Void>()
-    
+
     // MARK: - Public properties - Output
-    
+
     let summaryViewModel: CurrencyContentViewModel
     let parametersViewModel: DetailListViewModel
     let detailsViewModel: DetailListViewModel
-    
+
     let buttonTitle = "Simular novamente"
-    
+
     // MARK: - Initializers
 
     init(delegate: InvestmentSimulationDetailViewModelDelegate, detail: InvestmentDetail) {
-        
+
         self.delegate = delegate
         self.summaryViewModel = CurrencyContentViewModel(
             title: "Resultado da simulação",
@@ -50,9 +50,9 @@ final class InvestmentSimulationDetailViewModel {
             DetailViewModel(title: "Rendimento mensal", value: detail.monthlyGrossRateProfit.percentString),
             DetailViewModel(title: "Percentual do CDI do investimento", value: detail.investmentParameter.rate.percentString),
             DetailViewModel(title: "Rentabilidade anual", value: detail.annualGrossRateProfit.percentString),
-            DetailViewModel(title: "Rentabilidade no período", value: detail.rateProfit.percentString),
+            DetailViewModel(title: "Rentabilidade no período", value: detail.rateProfit.percentString)
         ])
-        
+
         setupObservables()
     }
 }
@@ -60,9 +60,9 @@ final class InvestmentSimulationDetailViewModel {
 // MARK: - Private methods
 
 extension InvestmentSimulationDetailViewModel {
-    
+
     private func setupObservables() {
-        
+
         buttonTap
             .subscribe(onNext: { [weak self] in self?.delegate?.didSelectSimulate() })
             .disposed(by: disposeBag)

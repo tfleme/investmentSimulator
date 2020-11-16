@@ -4,29 +4,29 @@ import Components
 final class SimulatorInputView: UIView, ViewStackable, KeyboardAdjustable {
 
     // MARK: - Private properties
-    
+
     private let scrollView = UIScrollView()
-    
+
     // MARK: - Public properties
-    
+
     let stackView = UIStackView()
-    
+
     lazy var keyboardLayoutGuideBottomConstraint = scrollView.bottomAnchor.constraint(
         equalTo: button.topAnchor,
         constant: -24.0)
-    
+
     // MARK: - Public properties
-    
+
     let button = Button()
-    
+
     // MARK: - Initializers
-    
+
     init() {
         super.init(frame: .zero)
         setupViewConfiguration()
         setupKeyboardNotifications()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -35,24 +35,24 @@ final class SimulatorInputView: UIView, ViewStackable, KeyboardAdjustable {
 // MARK: - ViewConfiguration
 
 extension SimulatorInputView: ViewConfigurable {
-    
+
     func buildViewHierarchy() {
-        
+
         addSubviews([scrollView, button])
         scrollView.addSubviews([stackView])
     }
-    
+
     func setupConstraints() {
-        
+
         setupScrollViewConstraints()
         setupStackViewConstraints()
         setupButtonConstraints()
     }
-    
+
     func setupViews() {
-        
+
         backgroundColor = .white
-        
+
         setupStackView()
     }
 }
@@ -60,9 +60,9 @@ extension SimulatorInputView: ViewConfigurable {
 // MARK: - Private methods - Constraints
 
 extension SimulatorInputView {
-    
+
     private func setupScrollViewConstraints() {
-        
+
         [
             scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -70,9 +70,9 @@ extension SimulatorInputView {
             keyboardLayoutGuideBottomConstraint
         ].activate()
     }
-    
+
     private func setupStackViewConstraints() {
-        
+
         [
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 24.0),
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -24.0),
@@ -81,9 +81,9 @@ extension SimulatorInputView {
             stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -48.0)
         ].activate()
     }
-    
+
     private func setupButtonConstraints() {
-        
+
         [
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24.0),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24.0),
@@ -95,9 +95,9 @@ extension SimulatorInputView {
 // MARK: - Private methods - Setup
 
 extension SimulatorInputView {
-    
+
     private func setupStackView() {
-        
+
         stackView.axis = .vertical
         stackView.spacing = 40.0
         stackView.distribution = .equalSpacing

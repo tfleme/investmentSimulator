@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "Components",
-            targets: ["Components"]),
+            targets: ["Components"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.1.1")
@@ -25,6 +25,6 @@ let package = Package(
             ]),
         .testTarget(
             name: "ComponentsTests",
-            dependencies: ["Components"]),
+            dependencies: ["Components"])
     ]
 )

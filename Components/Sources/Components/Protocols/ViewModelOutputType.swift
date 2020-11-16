@@ -12,15 +12,15 @@ public protocol ViewModelOutputType {
 // MARK: - Default implementations
 
 extension ViewModelOutputType {
-    
+
     public func showLoading() {
         isLoading.accept(true)
     }
-    
+
     public func hideLoading() {
         isLoading.accept(false)
     }
-    
+
     public func handleError<T>(_ error: Error) -> Observable<T> {
 
         hideLoading()

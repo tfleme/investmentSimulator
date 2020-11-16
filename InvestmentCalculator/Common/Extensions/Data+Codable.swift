@@ -4,9 +4,9 @@ import RxSwift
 // MARK: - Decodable
 
 extension Data {
-    
+
     func decoded<T: Decodable>() -> T? {
-        
+
         do {
             return try decoder.decode(T.self, from: self)
         } catch {
@@ -16,9 +16,9 @@ extension Data {
             return nil
         }
     }
-    
+
     func decoded<T: Decodable>() -> Observable<T> {
-        
+
         do {
             return try .just(decoder.decode(T.self, from: self))
         } catch {
@@ -33,11 +33,11 @@ extension Data {
 // MARK: - Encodable
 
 extension Data {
-    
+
     init?<T: Encodable>(
         _ model: T,
         encoder: JSONEncoder = .init()) {
-        
+
         do {
             self = try encoder.encode(model)
         } catch {
@@ -52,9 +52,9 @@ extension Data {
 // MARK: - JSONDecoder
 
 extension Data {
-    
+
     var decoder: JSONDecoder {
-        
+
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Short)
         return decoder
