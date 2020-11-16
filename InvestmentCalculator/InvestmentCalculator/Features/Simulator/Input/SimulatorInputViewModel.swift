@@ -27,7 +27,7 @@ final class SimulatorInputViewModel: ViewModelOutputType {
     let isLoading = BehaviorRelay<Bool>(value: false)
 
     let amountViewModel = InvestmentAmountViewModel()
-    let expirationDateViewModel = InvestmentExpirationDateViewModel()
+    lazy var expirationDateViewModel = InvestmentExpirationDateViewModel(useCases: useCases)
     let investmentPerformanceViewModel = InvestmentPerformanceViewModel()
     let buttonTitle = L10n.SimulatorInput.buttonTitle
 

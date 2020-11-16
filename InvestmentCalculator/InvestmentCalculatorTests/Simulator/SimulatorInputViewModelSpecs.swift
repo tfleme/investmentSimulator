@@ -153,4 +153,8 @@ final class InvesmentSimulationUseCasesStub: InvesmentSimulationUseCasesType {
     func simulate(with parameters: InvestmentSimulationParameters) -> Observable<InvestmentDetail> {
         return simulateResult
     }
+
+    func validDate(fromAppString string: String?) -> Date? {
+        return Date(withAppString: string)
+    }
 }

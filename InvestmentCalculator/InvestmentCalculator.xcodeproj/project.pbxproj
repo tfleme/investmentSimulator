@@ -391,10 +391,10 @@
 		82BCBD2025621E7A006A8AAF /* InvestmentCalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				82BCBD2125621E7A006A8AAF /* Resources */,
 				82BCBD2325621E7A006A8AAF /* Extensions */,
-				823A76292562E7E3004951CA /* UITests */,
 				82BCBD2625621E7A006A8AAF /* Simulator */,
+				823A76292562E7E3004951CA /* UITests */,
+				82BCBD2125621E7A006A8AAF /* Resources */,
 			);
 			path = InvestmentCalculatorTests;
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@ final class InvestmentExpirationDateViewModel: InputViewModel {
     // MARK: - Private properties
 
     private let disposeBag = DisposeBag()
+    private let useCases: InvestmentExpirationDateUseCasesType
 
     // MARK: - Public properties - Output
 
@@ -15,7 +16,9 @@ final class InvestmentExpirationDateViewModel: InputViewModel {
 
     // MARK: - Initializers
 
-    init() {
+    init(useCases: InvestmentExpirationDateUseCasesType) {
+
+        self.useCases = useCases
 
         super.init(title: L10n.SimulatorInput.ExpirationDate.title,
                    placeholder: L10n.SimulatorInput.ExpirationDate.placeholder,
@@ -34,11 +37,15 @@ extension InvestmentExpirationDateViewModel {
 
     private func setupObservables() {
 
-        #warning("Tiago Leme: Add validation logic")
-
         text
-            .map { Date(withAppString: $0) }
+            .map(useCases.validDate)
             .bind(to: expirationDate)
+            .disposed(by: disposeBag)
+
+        expirationDate
+            .skip(1)
+            .map { $0 != nil }
+            .bind(to: isInputValid)
             .disposed(by: disposeBag)
     }
 }

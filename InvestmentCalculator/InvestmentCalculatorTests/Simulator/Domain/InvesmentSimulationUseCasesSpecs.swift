@@ -46,6 +46,22 @@ final class InvesmentSimulationUseCasesSpecs: QuickSpec {
                 }
             } // simulate(with:)
 
+            describe("validDate(fromAppString:)") {
+                context("when method is called with a valid date string") {
+                    it("returns the date value") {
+
+                        expect(useCases.validDate(fromAppString: "14/12/2099")).toNot(beNil())
+                    }
+                }
+
+                context("when method is called with an invalid date string") {
+                    it("returns the date value") {
+
+                        expect(useCases.validDate(fromAppString: "14/12/1991")).to(beNil())
+                    }
+                }
+            } // validDate(fromAppString:)
+
             describe("memory leak") {
                 context("when InvesmentSimulationUseCases is attributed to a weak reference") {
                     it("it's weak reference should be nil") {
