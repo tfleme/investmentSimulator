@@ -142,7 +142,8 @@ extension InputView: UITextFieldDelegate {
         guard let text = textField.text else { return false }
 
         textfield.text = viewModel?.maskedText(text, forReplacementString: string, in: range)
-
+        viewModel?.text.accept(textfield.text)
+        
         return false
     }
 }
