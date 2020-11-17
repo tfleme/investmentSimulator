@@ -43,6 +43,7 @@
 		82BCBC5E2562190E006A8AAF /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC412562190E006A8AAF /* Decimal+Extensions.swift */; };
 		82BCBC5F2562190E006A8AAF /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC422562190E006A8AAF /* Collection+Extensions.swift */; };
 		82BCBC6B25621977006A8AAF /* String+ExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BCBC6A25621977006A8AAF /* String+ExtensionsSpecs.swift */; };
+		82CBB30A256479E900A39643 /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBB309256479E900A39643 /* NSLayoutAnchor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		82BCBC412562190E006A8AAF /* Decimal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		82BCBC422562190E006A8AAF /* Collection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		82BCBC6A25621977006A8AAF /* String+ExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsSpecs.swift"; sourceTree = "<group>"; };
+		82CBB309256479E900A39643 /* NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchor.swift; sourceTree = "<group>"; };
 		A06EB11ACA7AF25F593B7E4D /* Pods-InvestmentCalculatorTargets-Components-ComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-Components-ComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-Components-ComponentsTests/Pods-InvestmentCalculatorTargets-Components-ComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACAB26EEE6635DDF26EA8A2E /* Pods-InvestmentCalculatorTargets-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentCalculatorTargets-Components.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentCalculatorTargets-Components/Pods-InvestmentCalculatorTargets-Components.debug.xcconfig"; sourceTree = "<group>"; };
 		E0765928F75BE8CFF06E33AA /* Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentCalculatorTargets_Components_ComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -313,6 +315,7 @@
 				82BCBC3D2562190E006A8AAF /* UIColor+Extensions.swift */,
 				82BCBC3F2562190E006A8AAF /* UIStackView+Extensions.swift */,
 				82BCBC3A2562190E006A8AAF /* UIView+Extensions.swift */,
+				82CBB309256479E900A39643 /* NSLayoutAnchor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				82BCBC452562190E006A8AAF /* KeyboardAdjustable.swift in Sources */,
 				82BCBC482562190E006A8AAF /* ViewConfigurable.swift in Sources */,
 				82BCBC472562190E006A8AAF /* ViewStackable.swift in Sources */,
+				82CBB30A256479E900A39643 /* NSLayoutAnchor.swift in Sources */,
 				82BCBC4F2562190E006A8AAF /* Label.swift in Sources */,
 				82BCBC532562190E006A8AAF /* DetailListViewModel.swift in Sources */,
 				82BCBC582562190E006A8AAF /* Notification+Extensions.swift in Sources */,
